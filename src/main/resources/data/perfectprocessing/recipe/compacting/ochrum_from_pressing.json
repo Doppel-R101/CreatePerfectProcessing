@@ -17,9 +17,6 @@
       "tag": "c:nuggets/gold"
     },
     {
-      "tag": "c:nuggets/gold"
-    },
-    {
       "type": "fluid_stack",
       "amount": 100,
       "fluid": "minecraft:lava"

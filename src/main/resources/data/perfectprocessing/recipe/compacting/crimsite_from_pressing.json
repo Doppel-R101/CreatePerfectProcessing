@@ -23,12 +23,6 @@
       "tag": "c:nuggets/iron"
     },
     {
-      "tag": "c:nuggets/iron"
-    },
-    {
-      "tag": "c:nuggets/iron"
-    },
-    {
       "type": "fluid_stack",
       "amount": 100,
       "fluid": "minecraft:lava"

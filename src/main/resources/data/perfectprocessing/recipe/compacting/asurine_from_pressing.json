@@ -20,15 +20,6 @@
       "tag": "c:nuggets/zinc"
     },
     {
-      "tag": "c:nuggets/zinc"
-    },
-    {
-      "tag": "c:nuggets/zinc"
-    },
-    {
-      "tag": "c:nuggets/zinc"
-    },
-    {
       "type": "fluid_stack",
       "amount": 100,
       "fluid": "minecraft:lava"
