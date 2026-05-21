@@ -7,5 +7,11 @@
   "tag.item.perfectprocessing.copycat_scrap_tiny": "Tiny Copycat Scrap",
   "tag.item.perfectprocessing.copycat_scrap_cogwheels": "Cogwheel Copycat Scrap",
   "tag.item.perfectprocessing.copycat_scrap_pipe": "Pipe Copycat Scrap",
-  "tag.item.perfectprocessing.copycat_scrap_iron_door": "Iron Door Copycat Scrap"
+  "tag.item.perfectprocessing.copycat_scrap_iron_door": "Iron Door Copycat Scrap",
+
+  "tag.item.perfectprocessing.sophisticated_normal_upgrades": "Normal Backpack Upgrades",
+  "tag.item.perfectprocessing.sophisticated_advanced_upgrades": "Advanced Backpack Upgrades",
+  "tag.item.perfectprocessing.sophisticated_special_upgrades": "Special Backpack Upgrades",
+  "tag.item.perfectprocessing.sophisticated_backpacks": "Sophisticated Backpacks",
+  "tag.item.perfectprocessing.sophisticated_backpacks_value": "Valuable Sophisticated Backpacks"
 }

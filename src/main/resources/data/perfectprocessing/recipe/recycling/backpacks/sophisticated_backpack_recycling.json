@@ -1,0 +1,36 @@
+{
+  "type": "create:crushing",
+  "processing_time": 200,
+  "ingredients": [
+    {
+      "tag": "perfectprocessing:sophisticated_backpacks"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:oak_planks",
+      "chance": 0.65,
+      "count": 2
+    },
+    {
+      "id": "minecraft:oak_planks",
+      "chance": 0.25,
+      "count": 3
+    },
+    {
+      "id": "minecraft:string",
+      "chance": 0.35,
+      "count": 2
+    },
+    {
+      "id": "minecraft:leather",
+      "chance": 0.25,
+      "count": 2
+    },
+    {
+      "id": "minecraft:leather",
+      "chance": 0.45,
+      "count": 1
+    }
+  ]
+}

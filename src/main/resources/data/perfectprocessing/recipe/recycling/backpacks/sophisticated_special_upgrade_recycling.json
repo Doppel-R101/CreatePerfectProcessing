@@ -1,0 +1,25 @@
+{
+  "type": "create:crushing",
+  "processing_time": 200,
+  "ingredients": [
+    {
+      "tag": "perfectprocessing:sophisticated_special_upgrades"
+    }
+  ],
+  "results": [
+    {
+      "id": "sophisticatedbackpacks:upgrade_base",
+      "chance": 0.45,
+      "count": 1
+    },
+    {
+      "id": "minecraft:nether_star",
+      "count": 1
+    },
+    {
+      "id": "minecraft:ender_eye",
+      "chance": 0.45,
+      "count": 2
+    }
+  ]
+}
