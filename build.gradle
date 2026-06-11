@@ -21,6 +21,17 @@ repositories {
     maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
     maven { url = "https://mvn.devos.one/snapshots" } // Registrate
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
 }
 
 base {
@@ -120,6 +131,39 @@ dependencies {
     compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
+
+    // Dependencies for Datagen
+
+    // Deco
+    implementation("maven.modrinth:create-deco:2.1.3")
+    // Railway Navigator
+    implementation("maven.modrinth:create-railways-navigator:1.21.1-beta-0.9.1-C6")
+    // Bells and Whistles
+    implementation("maven.modrinth:bellsandwhistles:v0.4.7-1.21.1")
+    // Train Parts
+    implementation("maven.modrinth:create-train-parts:0.4.0")
+    // Petrol Parts
+    implementation("maven.modrinth:petrols-parts:1.21.1-1.2.10")
+    // Bits n Bobs
+    implementation("maven.modrinth:create-bits-n-bobs:0.0.44")
+    // Copycats
+    implementation("maven.modrinth:copycats:3.0.4+mc.1.21.1-neoforge")
+    // Connected
+    implementation("maven.modrinth:create-connected:1.2.0-mc1.21.1")
+    // Northstar
+    implementation("maven.modrinth:northstar-redux:0.5.4+1.21.1")
+    // Power Loader
+    implementation("maven.modrinth:create-power-loader:2.0.5-mc1.21.1")
+    // Stuffs n Additions
+    implementation("maven.modrinth:create-stuff-additions:2.1.3")
+    // Trading Floor
+    implementation("maven.modrinth:create-trading-floor:3.0.16")
+    // Slice and Dice
+    implementation("maven.modrinth:slice-and-dice:4.2.4")
+    //
+    //implementation("maven.modrinth::")
+
+
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
