@@ -11,8 +11,8 @@ public class perfectprocessing {
     public static final String MODID = "perfectprocessing";
 
     public perfectprocessing(IEventBus modEventBus, ModContainer modContainer) {
-        modEventBus.addListener(DataGenerators::gatherData);
         AllTags.init();
+        modEventBus.addListener(DataGenerators::gatherData);
     }
 
     public static ResourceLocation rl(String path){
