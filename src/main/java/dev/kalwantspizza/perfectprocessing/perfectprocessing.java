@@ -12,6 +12,7 @@ public class perfectprocessing {
 
     public perfectprocessing(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(DataGenerators::gatherData);
+        AllTags.init();
     }
 
     public static ResourceLocation rl(String path){

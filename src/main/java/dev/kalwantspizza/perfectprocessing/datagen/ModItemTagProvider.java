@@ -4,20 +4,23 @@ import com.copycatsplus.copycats.CCBlocks;
 import com.lightning.northstar.content.NorthstarItems;
 import com.simibubi.create.AllBlocks;
 import dev.kalwantspizza.perfectprocessing.AllTags;
+import dev.kalwantspizza.perfectprocessing.perfectprocessing;
 import net.mcreator.createstuffadditions.init.CreateSaModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.item.Items;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.p3pp3rf1y.sophisticatedbackpacks.compat.chipped.ChippedCompat;
 import net.p3pp3rf1y.sophisticatedbackpacks.compat.sawmill.SawmillCompat;
 import net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
 public class ModItemTagProvider extends ItemTagsProvider {
-    public ModItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
-        super(output, lookupProvider, CompletableFuture.supplyAsync(() -> null));
+    public ModItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
+        super(output, lookupProvider, CompletableFuture.supplyAsync(() -> null), perfectprocessing.MODID, existingFileHelper);
     }
 
     @Override
@@ -108,15 +111,31 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 ModItems.PUMP_UPGRADE.getKey(),
                 ModItems.ANVIL_UPGRADE.getKey(),
                 ModItems.SMITHING_UPGRADE.getKey(),
-                ModItems.ALCHEMY_UPGRADE.getKey(),
-                ChippedCompat.BOTANIST_WORKBENCH_UPGRADE.getKey(),
-                ChippedCompat.GLASSBLOWER_UPGRADE.getKey(),
-                ChippedCompat.CARPENTERS_TABLE_UPGRADE.getKey(),
-                ChippedCompat.LOOM_TABLE_UPGRADE.getKey(),
-                ChippedCompat.MASON_TABLE_UPGRADE.getKey(),
-                ChippedCompat.ALCHEMY_BENCH_UPGRADE.getKey(),
-                ChippedCompat.TINKERING_TABLE_UPGRADE.getKey(),
-                SawmillCompat.SAWMILL_UPGRADE.getKey()
+                ModItems.ALCHEMY_UPGRADE.getKey()
+        );
+        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
+                ChippedCompat.ALCHEMY_BENCH_UPGRADE.getId()
+        );
+        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
+                ChippedCompat.BOTANIST_WORKBENCH_UPGRADE.getId()
+        );
+        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
+                ChippedCompat.CARPENTERS_TABLE_UPGRADE.getId()
+        );
+        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
+                ChippedCompat.GLASSBLOWER_UPGRADE.getId()
+        );
+        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
+                ChippedCompat.MASON_TABLE_UPGRADE.getId()
+        );
+        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
+                ChippedCompat.LOOM_TABLE_UPGRADE.getId()
+        );
+        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
+                ChippedCompat.TINKERING_TABLE_UPGRADE.getId()
+        );
+        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
+                SawmillCompat.SAWMILL_UPGRADE.getId()
         );
         tag(AllTags.ItemTags.SOPHISTICATED_ADVANCED_UPGRADES).add(
                 ModItems.ADVANCED_PICKUP_UPGRADE.getKey(),

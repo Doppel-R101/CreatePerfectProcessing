@@ -4,6 +4,11 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
 public class AllTags {
+
+    public static void init() {
+
+    }
+
     public static class ItemTags {
         public static final TagKey<Item> COPYCAT_SCRAP_LARGE = createTag("copycat_scrap_large");
         public static final TagKey<Item> COPYCAT_SCRAP_MEDIUM = createTag("copycat_scrap_large");
