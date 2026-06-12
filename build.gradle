@@ -172,6 +172,10 @@ dependencies {
     implementation("maven.modrinth:sophisticated-core:1.21.1-1.4.53.2003")
     // Geckolib
     implementation("maven.modrinth:geckolib:gFmrC8Ru")
+    // Vanilla Backport
+    implementation("maven.modrinth:vanillabackport:rUSWdBok")
+    // Platform
+    implementation("maven.modrinth:platform:v7P0nBi2")
     //
     //implementation("maven.modrinth::")
 
