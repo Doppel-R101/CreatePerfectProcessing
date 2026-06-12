@@ -1,28 +1,23 @@
 package dev.kalwantspizza.perfectprocessing.datagen;
 
 import com.copycatsplus.copycats.CCBlocks;
+import com.lightning.northstar.content.NorthstarItems;
 import com.simibubi.create.AllBlocks;
 import dev.kalwantspizza.perfectprocessing.AllTags;
-import dev.kalwantspizza.perfectprocessing.perfectprocessing;
 import net.mcreator.createstuffadditions.init.CreateSaModItems;
-import net.mcreator.createstuffadditions.item.BlazingPickaxeItem;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.p3pp3rf1y.sophisticatedbackpacks.compat.chipped.ChippedCompat;
 import net.p3pp3rf1y.sophisticatedbackpacks.compat.sawmill.SawmillCompat;
 import net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
 public class ModItemTagProvider extends ItemTagsProvider {
-    public ModItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> itemTags, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, itemTags, perfectprocessing.MODID, existingFileHelper);
+    public ModItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+        super(output, lookupProvider, CompletableFuture.supplyAsync(() -> null));
     }
 
     @Override
@@ -274,53 +269,95 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(AllTags.ItemTags.TOOLS_ZINC_SMALL).add(
                 CreateSaModItems.ZINC_SHOVEL.get()
         );
+        // Copper (Stuffs & Additions)
+        tag(AllTags.ItemTags.TOOLS_COPPER_LARGE).add(
+                CreateSaModItems.COPPER_PICKAXE.get(),
+                CreateSaModItems.COPPER_AXE.get()
+        );
+        tag(AllTags.ItemTags.TOOLS_COPPER_NORMAL).add(
+                CreateSaModItems.COPPER_HOE.get(),
+                CreateSaModItems.COPPER_SWORD.get()
+        );
+        tag(AllTags.ItemTags.TOOLS_COPPER_SMALL).add(
+                CreateSaModItems.COPPER_SHOVEL.get()
+        );
+        // Experience (Stuffs & Additions)
+        tag(AllTags.ItemTags.TOOLS_EXPERIENCE_LARGE).add(
+                CreateSaModItems.EXPERIENCE_AXE.get(),
+                CreateSaModItems.EXPERIENCE_PICKAXE.get()
+        );
+        tag(AllTags.ItemTags.TOOLS_EXPERIENCE_NORMAL).add(
+                CreateSaModItems.EXPERIENCE_SWORD.get()
+        );
+        tag(AllTags.ItemTags.TOOLS_EXPERIENCE_SMALL).add(
+                CreateSaModItems.EXPERIENCE_SHOVEL.get()
+        );
+        // Martian Steel (Northstar)
+        tag(AllTags.ItemTags.TOOLS_MARTIAN_STEEL_LARGE).add(
+                NorthstarItems.MARTIAN_AXE.get(),
+                NorthstarItems.MARTIAN_PICKAXE.get()
+        );
+        tag(AllTags.ItemTags.TOOLS_MARTIAN_STEEL_NORMAL).add(
+                NorthstarItems.MARTIAN_HOE.get(),
+                NorthstarItems.MARTIAN_SWORD.get()
+        );
+        tag(AllTags.ItemTags.TOOLS_MARTIAN_STEEL_SMALL).add(
+                NorthstarItems.MARTIAN_SHOVEL.get()
+        );
 
-        tag(AllTags.ItemTags.TOOLS_WOODEN_LARGE).add(
-                Items.WOODEN_AXE,
-                Items.WOODEN_PICKAXE
+        // Leather
+        tag(AllTags.ItemTags.ARMOR_LEATHER_LARGE).add(
+                Items.LEATHER_CHESTPLATE,
+                Items.LEATHER_LEGGINGS
         );
-        tag(AllTags.ItemTags.TOOLS_WOODEN_NORMAL).add(
-                Items.WOODEN_HOE,
-                Items.WOODEN_SWORD
+        tag(AllTags.ItemTags.ARMOR_LEATHER_SMALL).add(
+                Items.LEATHER_HELMET,
+                Items.LEATHER_BOOTS
         );
-        tag(AllTags.ItemTags.TOOLS_WOODEN_SMALL).add(
-                Items.WOODEN_SHOVEL
+        // Chainmail
+        tag(AllTags.ItemTags.ARMOR_CHAINMAIL_LARGE).add(
+                Items.CHAINMAIL_CHESTPLATE,
+                Items.CHAINMAIL_LEGGINGS
         );
-
-        tag(AllTags.ItemTags.TOOLS_WOODEN_LARGE).add(
-                Items.WOODEN_AXE,
-                Items.WOODEN_PICKAXE
+        tag(AllTags.ItemTags.ARMOR_CHAINMAIL_SMALL).add(
+                Items.CHAINMAIL_HELMET,
+                Items.CHAINMAIL_BOOTS
         );
-        tag(AllTags.ItemTags.TOOLS_WOODEN_NORMAL).add(
-                Items.WOODEN_HOE,
-                Items.WOODEN_SWORD
+        // Iron
+        tag(AllTags.ItemTags.ARMOR_IRON_LARGE).add(
+                Items.IRON_CHESTPLATE,
+                Items.IRON_LEGGINGS
         );
-        tag(AllTags.ItemTags.TOOLS_WOODEN_SMALL).add(
-                Items.WOODEN_SHOVEL
+        tag(AllTags.ItemTags.ARMOR_IRON_SMALL).add(
+                Items.IRON_HELMET,
+                Items.IRON_BOOTS
         );
-
-        tag(AllTags.ItemTags.TOOLS_WOODEN_LARGE).add(
-                Items.WOODEN_AXE,
-                Items.WOODEN_PICKAXE
+        // Gold
+        tag(AllTags.ItemTags.ARMOR_GOLD_LARGE).add(
+                Items.GOLDEN_CHESTPLATE,
+                Items.GOLDEN_LEGGINGS
         );
-        tag(AllTags.ItemTags.TOOLS_WOODEN_NORMAL).add(
-                Items.WOODEN_HOE,
-                Items.WOODEN_SWORD
+        tag(AllTags.ItemTags.ARMOR_GOLd_SMALL).add(
+                Items.GOLDEN_HELMET,
+                Items.GOLDEN_BOOTS
         );
-        tag(AllTags.ItemTags.TOOLS_WOODEN_SMALL).add(
-                Items.WOODEN_SHOVEL
+        // Diamond
+        tag(AllTags.ItemTags.ARMOR_DIAMOND_LARGE).add(
+                Items.DIAMOND_CHESTPLATE,
+                Items.DIAMOND_LEGGINGS
         );
-
-        tag(AllTags.ItemTags.TOOLS_WOODEN_LARGE).add(
-                Items.WOODEN_AXE,
-                Items.WOODEN_PICKAXE
+        tag(AllTags.ItemTags.ARMOR_DIAMOND_SMALL).add(
+                Items.DIAMOND_HELMET,
+                Items.DIAMOND_BOOTS
         );
-        tag(AllTags.ItemTags.TOOLS_WOODEN_NORMAL).add(
-                Items.WOODEN_HOE,
-                Items.WOODEN_SWORD
+        // Netherite
+        tag(AllTags.ItemTags.ARMOR_NETHERITE_LARGE).add(
+                Items.NETHERITE_CHESTPLATE,
+                Items.NETHERITE_LEGGINGS
         );
-        tag(AllTags.ItemTags.TOOLS_WOODEN_SMALL).add(
-                Items.WOODEN_SHOVEL
+        tag(AllTags.ItemTags.ARMOR_NETHERITE_SMALL).add(
+                Items.NETHERITE_HELMET,
+                Items.NETHERITE_BOOTS
         );
     }
 }
