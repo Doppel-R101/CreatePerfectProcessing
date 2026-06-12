@@ -11,11 +11,11 @@ public class AllTags {
 
     public static class ItemTags {
         public static final TagKey<Item> COPYCAT_SCRAP_LARGE = createTag("copycat_scrap_large");
-        public static final TagKey<Item> COPYCAT_SCRAP_MEDIUM = createTag("copycat_scrap_large");
-        public static final TagKey<Item> COPYCAT_SCRAP_NORMAL = createTag("copycat_scrap_large");
-        public static final TagKey<Item> COPYCAT_SCRAP_SMALL = createTag("copycat_scrap_large");
-        public static final TagKey<Item> COPYCAT_SCRAP_MINI = createTag("copycat_scrap_large");
-        public static final TagKey<Item> COPYCAT_SCRAP_TINY = createTag("copycat_scrap_large");
+        public static final TagKey<Item> COPYCAT_SCRAP_MEDIUM = createTag("copycat_scrap_medium");
+        public static final TagKey<Item> COPYCAT_SCRAP_NORMAL = createTag("copycat_scrap_normal");
+        public static final TagKey<Item> COPYCAT_SCRAP_SMALL = createTag("copycat_scrap_small");
+        public static final TagKey<Item> COPYCAT_SCRAP_MINI = createTag("copycat_scrap_mini");
+        public static final TagKey<Item> COPYCAT_SCRAP_TINY = createTag("copycat_scrap_tiny");
         public static final TagKey<Item> COPYCAT_SCRAP_COGWHEELS = createTag("copycat_scrap_cogwheels");
         public static final TagKey<Item> COPYCAT_SCRAP_PIPE = createTag("copycat_scrap_pipe");
         public static final TagKey<Item> COPYCAT_SCRAP_IRON_DOOR = createTag("copycat_scrap_iron_door");
