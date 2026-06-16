@@ -10,6 +10,8 @@ Recipes included make several blocks and items renewable, such as asurine, calci
 - automation of diamonds, zinc, copper, lapis lazuli, phantom membranes and nickel
 - logical and realistic automation steps, like applying pressure, carbon and heat to produce diamonds
 - compatibility between Vanilla Backport and Create by adding wood blocks into appropriate tags
+- compatibility between Vanilla Backport and Quark
+- recycling of copycats & sophisticated backpacks
 - balancing of Supplementaries' flute songs for a more even distribution
 - consequently, you can use this in Skyblock challenges for even more automation
 
