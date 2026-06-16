@@ -2,7 +2,6 @@ package dev.kalwantspizza.perfectprocessing.datagen;
 
 import com.copycatsplus.copycats.CCBlocks;
 import com.lightning.northstar.content.NorthstarItems;
-import com.railwayteam.railways.registry.CRTags;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
 import dev.kalwantspizza.perfectprocessing.AllTags;
@@ -13,12 +12,9 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.p3pp3rf1y.sophisticatedbackpacks.compat.chipped.ChippedCompat;
-import net.p3pp3rf1y.sophisticatedbackpacks.compat.sawmill.SawmillCompat;
 import net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Calendar;
 import java.util.concurrent.CompletableFuture;
 
 public class ModItemTagProvider extends ItemTagsProvider {
@@ -331,11 +327,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 Items.IRON_BOOTS
         );
         // Gold
-        tag(AllTags.ItemTags.ARMOR_GOLD_LARGE).add(
+        tag(AllTags.ItemTags.ARMOR_GOLDEN_LARGE).add(
                 Items.GOLDEN_CHESTPLATE,
                 Items.GOLDEN_LEGGINGS
         );
-        tag(AllTags.ItemTags.ARMOR_GOLd_SMALL).add(
+        tag(AllTags.ItemTags.ARMOR_GOLDEN_SMALL).add(
                 Items.GOLDEN_HELMET,
                 Items.GOLDEN_BOOTS
         );
@@ -412,11 +408,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 NorthstarItems.IRON_SPACE_SUIT_BOOTS.get()
         );
         // Martian Steel Spacesuit (Northstar)
-        tag(AllTags.ItemTags.ARMOR_MARTIAN_STEEL_SPACESUIT_LARGE).add(
+        tag(AllTags.ItemTags.ARMOR_MARTIAN_STEEL_SPACE_SUIT_LARGE).add(
                 NorthstarItems.MARTIAN_STEEL_SPACE_SUIT_CHESTPIECE.get(),
                 NorthstarItems.MARTIAN_STEEL_SPACE_SUIT_LEGGINGS.get()
         );
-        tag(AllTags.ItemTags.ARMOR_MARTIAN_STEEL_SPACESUIT_SMALL).add(
+        tag(AllTags.ItemTags.ARMOR_MARTIAN_STEEL_SPACE_SUIT_SMALL).add(
                 NorthstarItems.MARTIAN_STEEL_SPACE_SUIT_HELMET.get(),
                 NorthstarItems.MARTIAN_STEEL_SPACE_SUIT_BOOTS.get()
         );
@@ -432,15 +428,19 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(AllTags.ItemTags.ARMOR_COPPER_JETPACK).add(
                 CreateSaModItems.COPPER_JETPACK_CHESTPLATE.get()
         );
-        // Andesite Jetpack (Stuffs & Additions)
+        // Netherite Jetpack (Stuffs & Additions)
+        tag(AllTags.ItemTags.ARMOR_NETHERITE_JETPACK).add(
+                CreateSaModItems.NETHERITE_JETPACK_CHESTPLATE.get()
+        );
+        // Andesite Exoskeleton (Stuffs & Additions)
         tag(AllTags.ItemTags.ARMOR_ANDESITE_EXOSKELETON).add(
                 CreateSaModItems.ANDESITE_EXOSKELETON_CHESTPLATE.get()
         );
-        // Brass Jetpack (Stuffs & Additions)
+        // Brass Exoskeleton (Stuffs & Additions)
         tag(AllTags.ItemTags.ARMOR_BRASS_EXOSKELETON).add(
                 CreateSaModItems.BRASS_EXOSKELETON_CHESTPLATE.get()
         );
-        // Copper Jetpack (Stuffs & Additions)
+        // Copper Exoskeleton (Stuffs & Additions)
         tag(AllTags.ItemTags.ARMOR_COPPER_EXOSKELETON).add(
                 CreateSaModItems.COPPER_EXOSKELETON_CHESTPLATE.get()
         );

@@ -75,9 +75,9 @@ public class AllTags {
         public static final TagKey<Item> ARMOR_IRON_LARGE = createTag("armor_iron_large");
         public static final TagKey<Item> ARMOR_IRON_NORMAL = createTag("armor_iron_normal");
         public static final TagKey<Item> ARMOR_IRON_SMALL = createTag("armor_iron_small");
-        public static final TagKey<Item> ARMOR_GOLD_LARGE = createTag("armor_gold_large");
-        public static final TagKey<Item> ARMOR_GOLD_NORMAL = createTag("armor_gold_normal");
-        public static final TagKey<Item> ARMOR_GOLd_SMALL = createTag("armor_gold_small");
+        public static final TagKey<Item> ARMOR_GOLDEN_LARGE = createTag("armor_gold_large");
+        public static final TagKey<Item> ARMOR_GOLDEN_NORMAL = createTag("armor_gold_normal");
+        public static final TagKey<Item> ARMOR_GOLDEN_SMALL = createTag("armor_gold_small");
         public static final TagKey<Item> ARMOR_DIAMOND_LARGE = createTag("armor_diamond_large");
         public static final TagKey<Item> ARMOR_DIAMOND_NORMAL = createTag("armor_diamond_normal");
         public static final TagKey<Item> ARMOR_DIAMOND_SMALL = createTag("armor_diamond_small");
@@ -99,6 +99,7 @@ public class AllTags {
         public static final TagKey<Item> ARMOR_BRASS_JETPACK = createTag("armor_brass_jetpack");
         public static final TagKey<Item> ARMOR_ANDESITE_JETPACK = createTag("armor_andesite_jetpack");
         public static final TagKey<Item> ARMOR_COPPER_JETPACK = createTag("armor_copper_jetpack");
+        public static final TagKey<Item> ARMOR_NETHERITE_JETPACK = createTag("armor_netherite_jetpack");
         public static final TagKey<Item> ARMOR_BRASS_EXOSKELETON = createTag("armor_brass_exoskeleton");
         public static final TagKey<Item> ARMOR_ANDESITE_EXOSKELETON = createTag("armor_andesite_exoskeleton");
         public static final TagKey<Item> ARMOR_COPPER_EXOSKELETON = createTag("armor_copper_exoskeleton");
@@ -108,10 +109,9 @@ public class AllTags {
         public static final TagKey<Item> ARMOR_IRON_SPACE_SUIT_LARGE = createTag("armor_iron_space_suit_large");
         public static final TagKey<Item> ARMOR_IRON_SPACE_SUIT_NORMAL = createTag("armor_iron_space_suit_normal");
         public static final TagKey<Item> ARMOR_IRON_SPACE_SUIT_SMALL = createTag("armor_iron_space_suit_small");
-        public static final TagKey<Item> ARMOR_MARTIAN_STEEL_SPACESUIT_LARGE = createTag("armor_martian_steel_space_suit_large");
-        public static final TagKey<Item> ARMOR_MARTIAN_STEEL_SPACESUIT_NORMAL = createTag("armor_martian_steel_space_suit_normal");
-        public static final TagKey<Item> ARMOR_MARTIAN_STEEL_SPACESUIT_SMALL = createTag("armor_martian_steel_space_suit_small");
-
+        public static final TagKey<Item> ARMOR_MARTIAN_STEEL_SPACE_SUIT_LARGE = createTag("armor_martian_steel_space_suit_large");
+        public static final TagKey<Item> ARMOR_MARTIAN_STEEL_SPACE_SUIT_NORMAL = createTag("armor_martian_steel_space_suit_normal");
+        public static final TagKey<Item> ARMOR_MARTIAN_STEEL_SPACE_SUIT_SMALL = createTag("armor_martian_steel_space_suit_small");
     }
 
     private static TagKey<Item> createTag(String name) {

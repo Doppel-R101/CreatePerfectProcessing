@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-16T06:12:58.7701077	Tags for minecraft:item mod id perfectprocessing
+// 1.21.1	2026-06-16T07:04:23.7969676	Tags for minecraft:item mod id perfectprocessing
 bab798cfb54a319a5a9ce84f8527ee5b25127067 data/perfectprocessing/tags/item/armor_andesite_exoskeleton.json
 aa1eac2d76ea64509f6d787817e8d60185f15f00 data/perfectprocessing/tags/item/armor_andesite_jetpack.json
 330dd9a5b73e5f826cd94af4e9fa8b99e0a3102d data/perfectprocessing/tags/item/armor_brass_exoskeleton.json
@@ -27,6 +27,7 @@ ed5b16f716fec3ed3dfeb374ba6e6822e0c343cb data/perfectprocessing/tags/item/armor_
 afbebc33f32249174a77f8d277e6402d25be16cf data/perfectprocessing/tags/item/armor_martian_steel_small.json
 16daac00ed73de1fcb3303f162c00103dbe72ec7 data/perfectprocessing/tags/item/armor_martian_steel_space_suit_large.json
 f78c9d18da98faf7f9195aedce208380991f666b data/perfectprocessing/tags/item/armor_martian_steel_space_suit_small.json
+0068c1a0861bd0f7f372d21df759acffa719c195 data/perfectprocessing/tags/item/armor_netherite_jetpack.json
 9218dff75da29dab0511f915aae2b325d36e9eac data/perfectprocessing/tags/item/armor_netherite_large.json
 9d99801a31cfcffc6afc6fd2eebb38fcfb16bd8c data/perfectprocessing/tags/item/armor_netherite_small.json
 590b1350cb6ad5171b36ae8c8fcf4013226bd4f9 data/perfectprocessing/tags/item/armor_zinc_large.json
