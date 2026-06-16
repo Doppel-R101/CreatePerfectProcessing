@@ -9,9 +9,126 @@
   "tag.item.perfectprocessing.copycat_scrap_pipe": "Pipe Copycat Scrap",
   "tag.item.perfectprocessing.copycat_scrap_iron_door": "Iron Door Copycat Scrap",
 
+
   "tag.item.perfectprocessing.sophisticated_normal_upgrades": "Normal Backpack Upgrades",
   "tag.item.perfectprocessing.sophisticated_advanced_upgrades": "Advanced Backpack Upgrades",
   "tag.item.perfectprocessing.sophisticated_special_upgrades": "Special Backpack Upgrades",
   "tag.item.perfectprocessing.sophisticated_backpacks": "Sophisticated Backpacks",
-  "tag.item.perfectprocessing.sophisticated_backpacks_value": "Valuable Sophisticated Backpacks"
+  "tag.item.perfectprocessing.sophisticated_backpacks_value": "Valuable Sophisticated Backpacks",
+
+
+  "tag.item.perfectprocessing.tools_wooden_large": "Large Wooden Tools",
+  "tag.item.perfectprocessing.tools_wooden_normal": "Normal Wooden Tools",
+  "tag.item.perfectprocessing.tools_wooden_small": "Small Wooden Tools",
+
+  "tag.item.perfectprocessing.tools_stone_large": "Large Stone Tools",
+  "tag.item.perfectprocessing.tools_stone_normal": "Normal Stone Tools",
+  "tag.item.perfectprocessing.tools_stone_small": "Small Stone Tools",
+
+  "tag.item.perfectprocessing.tools_iron_large": "Large Iron Tools",
+  "tag.item.perfectprocessing.tools_iron_normal": "Normal Iron Tools",
+  "tag.item.perfectprocessing.tools_iron_small": "Small Iron Tools",
+
+  "tag.item.perfectprocessing.tools_golden_large": "Large Golden Tools",
+  "tag.item.perfectprocessing.tools_golden_normal": "Normal Golden Tools",
+  "tag.item.perfectprocessing.tools_golden_small": "Small Golden Tools",
+
+  "tag.item.perfectprocessing.tools_diamond_large": "Large Diamond Tools",
+  "tag.item.perfectprocessing.tools_diamond_normal": "Normal Diamond Tools",
+  "tag.item.perfectprocessing.tools_diamond_small": "Small Diamond Tools",
+
+  "tag.item.perfectprocessing.tools_netherite_large": "Large Netherite Tools",
+  "tag.item.perfectprocessing.tools_netherite_normal": "Normal Netherite Tools",
+  "tag.item.perfectprocessing.tools_netherite_small": "Small Netherite Tools",
+
+  "tag.item.perfectprocessing.tools_blazing_large": "Large Blazing Tools",
+  "tag.item.perfectprocessing.tools_blazing_normal": "Normal Blazing Tools",
+  "tag.item.perfectprocessing.tools_blazing_small": "Small Blazing Tools",
+
+  "tag.item.perfectprocessing.tools_gilded_quartz_large": "Large Gilded Quartz Tools",
+  "tag.item.perfectprocessing.tools_gilded_quartz_normal": "Normal Gilded Quartz Tools",
+  "tag.item.perfectprocessing.tools_gilded_quartz_small": "Small Gilded Quartz Tools",
+
+  "tag.item.perfectprocessing.tools_brass_large": "Large Brass Tools",
+  "tag.item.perfectprocessing.tools_brass_normal": "Normal Brass Tools",
+  "tag.item.perfectprocessing.tools_brass_small": "Small Brass Tools",
+
+  "tag.item.perfectprocessing.tools_zinc_large": "Large Zinc Tools",
+  "tag.item.perfectprocessing.tools_zinc_normal": "Normal Zinc Tools",
+  "tag.item.perfectprocessing.tools_zinc_small": "Small Zinc Tools",
+
+  "tag.item.perfectprocessing.tools_copper_large": "Large Copper Tools",
+  "tag.item.perfectprocessing.tools_copper_normal": "Normal Copper Tools",
+  "tag.item.perfectprocessing.tools_copper_small": "Small Copper Tools",
+
+  "tag.item.perfectprocessing.tools_experience_large": "Large Experience Tools",
+  "tag.item.perfectprocessing.tools_experience_normal": "Normal Experience Tools",
+  "tag.item.perfectprocessing.tools_experience_small": "Small Experience Tools",
+
+  "tag.item.perfectprocessing.tools_martian_steel_large": "Large Martian Steel Tools",
+  "tag.item.perfectprocessing.tools_martian_steel_normal": "Normal Martian Steel Tools",
+  "tag.item.perfectprocessing.tools_martian_steel_small": "Small Martian Steel Tools",
+
+
+  "tag.item.perfectprocessing.armor_leather_large": "Large Leather Armor Pieces",
+  "tag.item.perfectprocessing.armor_leather_normal": "Normal Leather Armor Pieces",
+  "tag.item.perfectprocessing.armor_leather_small": "Small Leather Armor Pieces",
+
+  "tag.item.perfectprocessing.armor_chainmail_large": "Large Chainmail Armor Pieces",
+  "tag.item.perfectprocessing.armor_chainmail_normal": "Normal Chainmail Armor Pieces",
+  "tag.item.perfectprocessing.armor_chainmail_small": "Small Chainmail Armor Pieces",
+
+  "tag.item.perfectprocessing.armor_iron_large": "Large Iron Armor Pieces",
+  "tag.item.perfectprocessing.armor_iron_normal": "Normal Iron Armor Pieces",
+  "tag.item.perfectprocessing.armor_iron_small": "Small Iron Armor Pieces",
+
+  "tag.item.perfectprocessing.armor_golden_large": "Large Golden Armor Pieces",
+  "tag.item.perfectprocessing.armor_golden_normal": "Normal Golden Armor Pieces",
+  "tag.item.perfectprocessing.armor_golden_small": "Small Golden Armor Pieces",
+
+  "tag.item.perfectprocessing.armor_diamond_large": "Large Diamond Armor Pieces",
+  "tag.item.perfectprocessing.armor_diamond_normal": "Normal Diamond Armor Pieces",
+  "tag.item.perfectprocessing.armor_diamond_small": "Small Diamond Armor Pieces",
+
+  "tag.item.perfectprocessing.armor_netherite_large": "Large Netherite Armor Pieces",
+  "tag.item.perfectprocessing.armor_netherite_normal": "Normal Netherite Armor Pieces",
+  "tag.item.perfectprocessing.armor_netherite_small": "Small Netherite Armor Pieces",
+
+  "tag.item.perfectprocessing.armor_cardboard_large": "Large Cardboard Armor Pieces",
+  "tag.item.perfectprocessing.armor_cardboard_normal": "Normal Cardboard Armor Pieces",
+  "tag.item.perfectprocessing.armor_cardboard_small": "Small Cardboard Armor Pieces",
+
+  "tag.item.perfectprocessing.armor_brass_large": "Large Brass Armor Pieces",
+  "tag.item.perfectprocessing.armor_brass_normal": "Normal Brass Armor Pieces",
+  "tag.item.perfectprocessing.armor_brass_small": "Small Brass Armor Pieces",
+
+  "tag.item.perfectprocessing.armor_zinc_large": "Large Zinc Armor Pieces",
+  "tag.item.perfectprocessing.armor_zinc_normal": "Normal Zinc Armor Pieces",
+  "tag.item.perfectprocessing.armor_zinc_small": "Small Zinc Armor Pieces",
+
+  "tag.item.perfectprocessing.armor_copper_large": "Large Copper Armor Pieces",
+  "tag.item.perfectprocessing.armor_copper_normal": "Normal Copper Armor Pieces",
+  "tag.item.perfectprocessing.armor_copper_small": "Small Copper Armor Pieces",
+
+  "tag.item.perfectprocessing.armor_andesite_jetpack": "Andesite Jetpacks",
+  "tag.item.perfectprocessing.armor_brass_jetpack": "Brass Jetpacks",
+  "tag.item.perfectprocessing.armor_copper_jetpack": "Copper Jetpacks",
+  "tag.item.perfectprocessing.armor_netherite_jetpack": "Netherite Jetpacks",
+
+  "tag.item.perfectprocessing.armor_andesite_exoskeleton": "Andesite Exoskeletons",
+  "tag.item.perfectprocessing.armor_brass_exoskeleton": "Brass Exoskeletons",
+  "tag.item.perfectprocessing.armor_copper_exoskeleton": "Copper Exoskeletons",
+  "tag.item.perfectprocessing.armor_netherite_exoskeleton": "Netherite Exoskeletons",
+
+  "tag.item.perfectprocessing.armor_martian_steel_large": "Large Martian Steel Armor Pieces",
+  "tag.item.perfectprocessing.armor_martian_steel_normal": "Normal Martian Steel Armor Pieces",
+  "tag.item.perfectprocessing.armor_martian_steel_small": "Small Martian Steel Armor Pieces",
+
+  "tag.item.perfectprocessing.armor_iron_space_suit_large": "Large Iron Space Suit Pieces",
+  "tag.item.perfectprocessing.armor_iron_space_suit_normal": "Normal Iron Space Suit Pieces",
+  "tag.item.perfectprocessing.armor_iron_space_suit_small": "Small Iron Space Suit Pieces",
+
+  "tag.item.perfectprocessing.armor_martian_steel_space_suit_large": "Large Martian Steel Space Suit Pieces",
+  "tag.item.perfectprocessing.armor_martian_steel_space_suit_normal": "Normal Martian Steel Space Suit Pieces",
+  "tag.item.perfectprocessing.armor_martian_steel_space_suit_small": "Small Martian Steel Space Suit Pieces"
 }
