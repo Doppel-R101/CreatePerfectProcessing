@@ -96,6 +96,12 @@ public class AllTags {
         public static final TagKey<Item> ARMOR_COPPER_LARGE = createTag("armor_copper_large");
         public static final TagKey<Item> ARMOR_COPPER_NORMAL = createTag("armor_copper_normal");
         public static final TagKey<Item> ARMOR_COPPER_SMALL = createTag("armor_copper_small");
+        public static final TagKey<Item> ARMOR_BRASS_JETPACK = createTag("armor_brass_jetpack");
+        public static final TagKey<Item> ARMOR_ANDESITE_JETPACK = createTag("armor_andesite_jetpack");
+        public static final TagKey<Item> ARMOR_COPPER_JETPACK = createTag("armor_copper_jetpack");
+        public static final TagKey<Item> ARMOR_BRASS_EXOSKELETON = createTag("armor_brass_exoskeleton");
+        public static final TagKey<Item> ARMOR_ANDESITE_EXOSKELETON = createTag("armor_andesite_exoskeleton");
+        public static final TagKey<Item> ARMOR_COPPER_EXOSKELETON = createTag("armor_copper_exoskeleton");
         public static final TagKey<Item> ARMOR_MARTIAN_STEEL_LARGE = createTag("armor_martian_steel_large");
         public static final TagKey<Item> ARMOR_MARTIAN_STEEL_NORMAL = createTag("armor_martian_steel_normal");
         public static final TagKey<Item> ARMOR_MARTIAN_STEEL_SMALL = createTag("armor_martian_steel_small");

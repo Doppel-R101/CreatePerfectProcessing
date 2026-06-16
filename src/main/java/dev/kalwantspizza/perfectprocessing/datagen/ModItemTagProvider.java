@@ -2,7 +2,9 @@ package dev.kalwantspizza.perfectprocessing.datagen;
 
 import com.copycatsplus.copycats.CCBlocks;
 import com.lightning.northstar.content.NorthstarItems;
+import com.railwayteam.railways.registry.CRTags;
 import com.simibubi.create.AllBlocks;
+import com.simibubi.create.AllItems;
 import dev.kalwantspizza.perfectprocessing.AllTags;
 import dev.kalwantspizza.perfectprocessing.perfectprocessing;
 import net.mcreator.createstuffadditions.init.CreateSaModItems;
@@ -16,6 +18,7 @@ import net.p3pp3rf1y.sophisticatedbackpacks.compat.sawmill.SawmillCompat;
 import net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Calendar;
 import java.util.concurrent.CompletableFuture;
 
 public class ModItemTagProvider extends ItemTagsProvider {
@@ -112,30 +115,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 ModItems.ANVIL_UPGRADE.getKey(),
                 ModItems.SMITHING_UPGRADE.getKey(),
                 ModItems.ALCHEMY_UPGRADE.getKey()
-        );
-        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
-                ChippedCompat.ALCHEMY_BENCH_UPGRADE.getId()
-        );
-        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
-                ChippedCompat.BOTANIST_WORKBENCH_UPGRADE.getId()
-        );
-        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
-                ChippedCompat.CARPENTERS_TABLE_UPGRADE.getId()
-        );
-        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
-                ChippedCompat.GLASSBLOWER_UPGRADE.getId()
-        );
-        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
-                ChippedCompat.MASON_TABLE_UPGRADE.getId()
-        );
-        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
-                ChippedCompat.LOOM_TABLE_UPGRADE.getId()
-        );
-        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
-                ChippedCompat.TINKERING_TABLE_UPGRADE.getId()
-        );
-        tag(AllTags.ItemTags.SOPHISTICATED_NORMAL_UPGRADES).addOptional(
-                SawmillCompat.SAWMILL_UPGRADE.getId()
         );
         tag(AllTags.ItemTags.SOPHISTICATED_ADVANCED_UPGRADES).add(
                 ModItems.ADVANCED_PICKUP_UPGRADE.getKey(),
@@ -377,6 +356,93 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(AllTags.ItemTags.ARMOR_NETHERITE_SMALL).add(
                 Items.NETHERITE_HELMET,
                 Items.NETHERITE_BOOTS
+        );
+        // Cardboard (Create)
+        tag(AllTags.ItemTags.ARMOR_CARDBOARD_LARGE).add(
+                AllItems.CARDBOARD_CHESTPLATE.get(),
+                AllItems.CARDBOARD_LEGGINGS.get()
+        );
+        tag(AllTags.ItemTags.ARMOR_CARDBOARD_SMALL).add(
+                AllItems.CARDBOARD_HELMET.get(),
+                AllItems.CARDBOARD_BOOTS.get()
+        );
+        // Brass (Stuffs & Additions)
+        tag(AllTags.ItemTags.ARMOR_BRASS_LARGE).add(
+                CreateSaModItems.BRASS_CHESTPLATE.get(),
+                CreateSaModItems.BRASS_LEGGINGS.get()
+        );
+        tag(AllTags.ItemTags.ARMOR_BRASS_SMALL).add(
+                CreateSaModItems.BRASS_HELMET.get(),
+                CreateSaModItems.BRASS_BOOTS.get()
+        );
+        // Zinc (Stuffs & Additions)
+        tag(AllTags.ItemTags.ARMOR_ZINC_LARGE).add(
+                CreateSaModItems.ZINC_CHESTPLATE.get(),
+                CreateSaModItems.ZINC_LEGGINGS.get()
+        );
+        tag(AllTags.ItemTags.ARMOR_ZINC_SMALL).add(
+                CreateSaModItems.ZINC_LEGGINGS.get(),
+                CreateSaModItems.ZINC_BOOTS.get()
+        );
+        // Copper (Stuffs & Additions)
+        tag(AllTags.ItemTags.ARMOR_COPPER_LARGE).add(
+                CreateSaModItems.COPPER_CHESTPLATE.get(),
+                CreateSaModItems.COPPER_LEGGINGS.get()
+        );
+        tag(AllTags.ItemTags.ARMOR_COPPER_SMALL).add(
+                CreateSaModItems.COPPER_HELMET.get(),
+                CreateSaModItems.COPPER_BOOTS.get()
+        );
+        // Martian Steel (Northstar)
+        tag(AllTags.ItemTags.ARMOR_MARTIAN_STEEL_LARGE).add(
+                NorthstarItems.MARTIAN_STEEL_CHESTPLATE.get(),
+                NorthstarItems.MARTIAN_STEEL_LEGGINGS.get()
+        );
+        tag(AllTags.ItemTags.ARMOR_MARTIAN_STEEL_SMALL).add(
+                NorthstarItems.MARTIAN_STEEL_HELMET.get(),
+                NorthstarItems.MARTIAN_STEEL_BOOTS.get()
+        );
+        // Iron Space Suit (Northstar)
+        tag(AllTags.ItemTags.ARMOR_IRON_SPACE_SUIT_LARGE).add(
+                NorthstarItems.IRON_SPACE_SUIT_CHESTPIECE.get(),
+                NorthstarItems.IRON_SPACE_SUIT_LEGGINGS.get()
+        );
+        tag(AllTags.ItemTags.ARMOR_IRON_SPACE_SUIT_SMALL).add(
+                NorthstarItems.IRON_SPACE_SUIT_HELMET.get(),
+                NorthstarItems.IRON_SPACE_SUIT_BOOTS.get()
+        );
+        // Martian Steel Spacesuit (Northstar)
+        tag(AllTags.ItemTags.ARMOR_MARTIAN_STEEL_SPACESUIT_LARGE).add(
+                NorthstarItems.MARTIAN_STEEL_SPACE_SUIT_CHESTPIECE.get(),
+                NorthstarItems.MARTIAN_STEEL_SPACE_SUIT_LEGGINGS.get()
+        );
+        tag(AllTags.ItemTags.ARMOR_MARTIAN_STEEL_SPACESUIT_SMALL).add(
+                NorthstarItems.MARTIAN_STEEL_SPACE_SUIT_HELMET.get(),
+                NorthstarItems.MARTIAN_STEEL_SPACE_SUIT_BOOTS.get()
+        );
+        // Andesite Jetpack (Stuffs & Additions)
+        tag(AllTags.ItemTags.ARMOR_ANDESITE_JETPACK).add(
+                CreateSaModItems.ANDESITE_JETPACK_CHESTPLATE.get()
+        );
+        // Brass Jetpack (Stuffs & Additions)
+        tag(AllTags.ItemTags.ARMOR_BRASS_JETPACK).add(
+                CreateSaModItems.BRASS_JETPACK_CHESTPLATE.get()
+        );
+        // Copper Jetpack (Stuffs & Additions)
+        tag(AllTags.ItemTags.ARMOR_COPPER_JETPACK).add(
+                CreateSaModItems.COPPER_JETPACK_CHESTPLATE.get()
+        );
+        // Andesite Jetpack (Stuffs & Additions)
+        tag(AllTags.ItemTags.ARMOR_ANDESITE_EXOSKELETON).add(
+                CreateSaModItems.ANDESITE_EXOSKELETON_CHESTPLATE.get()
+        );
+        // Brass Jetpack (Stuffs & Additions)
+        tag(AllTags.ItemTags.ARMOR_BRASS_EXOSKELETON).add(
+                CreateSaModItems.BRASS_EXOSKELETON_CHESTPLATE.get()
+        );
+        // Copper Jetpack (Stuffs & Additions)
+        tag(AllTags.ItemTags.ARMOR_COPPER_EXOSKELETON).add(
+                CreateSaModItems.COPPER_EXOSKELETON_CHESTPLATE.get()
         );
     }
 }
