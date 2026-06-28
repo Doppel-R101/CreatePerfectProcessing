@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "sophisticatedbackpacks"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "perfectprocessing:sophisticated/normal_upgrades"
+    }
+  ],
+  "processing_time": 300,
+  "results": [
+    {
+      "chance": 0.45,
+      "id": "sophisticatedbackpacks:upgrade_base"
+    },
+    {
+      "chance": 0.35,
+      "count": 7,
+      "id": "minecraft:iron_nugget"
+    },
+    {
+      "chance": 0.335,
+      "count": 2,
+      "id": "minecraft:redstone"
+    }
+  ]
+}

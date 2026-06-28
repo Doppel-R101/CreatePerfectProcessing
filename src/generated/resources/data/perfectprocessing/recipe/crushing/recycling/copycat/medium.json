@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "copycats"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "perfectprocessing:copycats/scrap_medium"
+    }
+  ],
+  "processing_time": 300,
+  "results": [
+    {
+      "chance": 0.65,
+      "count": 4,
+      "id": "create:zinc_nugget"
+    },
+    {
+      "chance": 0.15,
+      "count": 3,
+      "id": "create:zinc_nugget"
+    }
+  ]
+}
