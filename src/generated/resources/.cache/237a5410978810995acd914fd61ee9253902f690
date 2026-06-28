@@ -1,9 +1,10 @@
-// 1.21.1	2026-06-28T19:22:42.3581692	perfectprocessing's processing recipes: crushing
+// 1.21.1	2026-06-28T19:39:41.4998038	perfectprocessing's processing recipes: crushing
 bf3c60cfa0d29cfffb0ad0813ad893561e8c8126 data/perfectprocessing/recipe/crushing/compat/creatingspace/nickel_nugget_from_scorchia.json
 9e9f6bbaa7d1e689c0f3787beee04b5c4314cd1d data/perfectprocessing/recipe/crushing/compat/northstar/rutile_concentrate_from_limestone.json
 d80c88ac9413f836cdab1b485680e20ebc0385b8 data/perfectprocessing/recipe/crushing/content/cobbled_deepslate_from_deepslate.json
 f11408c095e903a612c486205b5728009613009d data/perfectprocessing/recipe/crushing/content/copper_nugget_from_limestone.json
 65da787e33c66f94aa0fbd0182429b328e9394f8 data/perfectprocessing/recipe/crushing/content/powdered_obsidian_from_crying_obsidian.json
+54660256e93a28b887ec98a35f6cb43c1e458d23 data/perfectprocessing/recipe/crushing/content/zinc_nugget_from_scoria.json
 6abfb39317d814c24a6f4f70b8c8c19b2789a249 data/perfectprocessing/recipe/crushing/recycling/copycat/cogwheel.json
 4e8ab49cf5ba3c4ec08bb600297092c30a109bde data/perfectprocessing/recipe/crushing/recycling/copycat/iron_door.json
 bb3e2919d23ce6974bea09d949f363e8118b91bf data/perfectprocessing/recipe/crushing/recycling/copycat/large.json

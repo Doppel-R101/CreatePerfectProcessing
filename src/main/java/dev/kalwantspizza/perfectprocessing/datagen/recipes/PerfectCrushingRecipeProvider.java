@@ -21,6 +21,7 @@ import net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems;
 import com.copycatsplus.copycats.Copycats;
 import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
 
+@SuppressWarnings("unused")
 public class PerfectCrushingRecipeProvider extends CrushingRecipeGen {
 
     GeneratedRecipe
@@ -308,6 +309,12 @@ public class PerfectCrushingRecipeProvider extends CrushingRecipeGen {
                 .require(Items.CRYING_OBSIDIAN)
                 .output(Items.OBSIDIAN)
                 .output(0.25f, AllItems.POWDERED_OBSIDIAN)
+        ),
+
+        ZINC_NUGGET_FROM_SCORIA = create("content/zinc_nugget_from_scoria", b -> b
+                .duration(250)
+                .require(AllPaletteStoneTypes.SCORIA.getBaseBlock().get())
+                .output(0.30f, AllItems.ZINC_NUGGET)
         );
 
     /*
