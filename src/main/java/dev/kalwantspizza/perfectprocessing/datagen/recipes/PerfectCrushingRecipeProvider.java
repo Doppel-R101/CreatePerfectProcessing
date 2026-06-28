@@ -26,16 +26,16 @@ public class PerfectCrushingRecipeProvider extends CrushingRecipeGen {
 
     GeneratedRecipe
 
-    // Copycats
+        // Copycats
         RECYCLE_COPYCATS_COGWHEEL = create("recycling/copycat/cogwheel", b -> b
-            .duration(300)
-            .require(ItemTags.COPYCAT_SCRAP_COGWHEELS)
-            .output(0.45f, AllItems.ZINC_NUGGET.get(), 3)
-            .output(0.15f, AllItems.ZINC_NUGGET, 2)
-            .output(0.5f, AllItems.ANDESITE_ALLOY, 1)
-            .output(0.25f, Items.OAK_PLANKS, 1)
-            .withCondition(new ModLoadedCondition(Copycats.MODID))
-    ),
+                .duration(300)
+                .require(ItemTags.COPYCAT_SCRAP_COGWHEELS)
+                .output(0.45f, AllItems.ZINC_NUGGET.get(), 3)
+                .output(0.15f, AllItems.ZINC_NUGGET, 2)
+                .output(0.5f, AllItems.ANDESITE_ALLOY, 1)
+                .output(0.25f, Items.OAK_PLANKS, 1)
+                .withCondition(new ModLoadedCondition(Copycats.MODID))
+        ),
 
         RECYCLE_COPYCATS_IRON_DOOR = create("recycling/copycat/iron_door", b -> b
                 .duration(300)
@@ -167,113 +167,157 @@ public class PerfectCrushingRecipeProvider extends CrushingRecipeGen {
 
         ),
 
-    // General
-    // Armour
-    // Cardboard
+        // General
+        // Armour
+        // Cardboard
         ARMOR_CARDBOARD_LARGE = create("recycling/general/armor/cardboard_large", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_CARDBOARD_LARGE)
-            .output(AllItems.CARDBOARD.get(), 3)
-            .output(0.5f, AllItems.CARDBOARD.get(), 1)
-            .output(0.25f, AllItems.CARDBOARD.get(), 1)
-    ),
+                .duration(200)
+                .require(ItemTags.ARMOR_CARDBOARD_LARGE)
+                .output(AllItems.CARDBOARD.get(), 3)
+                .output(0.5f, AllItems.CARDBOARD.get(), 1)
+                .output(0.25f, AllItems.CARDBOARD.get(), 1)
+        ),
+
         ARMOR_CARDBOARD_SMALL = create("recycling/general/armor/cardboard_small", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_CARDBOARD_SMALL)
-            .output(AllItems.CARDBOARD.get(), 1)
-            .output(0.25f, AllItems.CARDBOARD.get(), 1)
-    ),
-    // Leather
+                .duration(200)
+                .require(ItemTags.ARMOR_CARDBOARD_SMALL)
+                .output(AllItems.CARDBOARD.get(), 1)
+                .output(0.25f, AllItems.CARDBOARD.get(), 1)
+        ),
+
+        // Leather
         ARMOR_LEATHER_LARGE = create("recycling/general/armor/leather_large", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_LEATHER_LARGE)
-            .output(Items.LEATHER, 3)
-            .output(0.5f, Items.LEATHER, 1)
-            .output(0.25f, Items.LEATHER, 1)
-    ),
+                .duration(200)
+                .require(ItemTags.ARMOR_LEATHER_LARGE)
+                .output(Items.LEATHER, 3)
+                .output(0.5f, Items.LEATHER, 1)
+                .output(0.25f, Items.LEATHER, 1)
+        ),
+
         ARMOR_LEATHER_SMALL = create("recycling/general/armor/leather_small", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_LEATHER_SMALL)
-            .output(Items.LEATHER, 1)
-            .output(0.25f, Items.LEATHER, 1)
-    ),
+                .duration(200)
+                .require(ItemTags.ARMOR_LEATHER_SMALL)
+                .output(Items.LEATHER, 1)
+                .output(0.25f, Items.LEATHER, 1)
+        ),
 
         ARMOR_CHAINMAIL_LARGE = create("recycling/general/armor/chainmail_large", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_CHAINMAIL_LARGE)
-            .output(Items.IRON_INGOT, 3)
-            .output(0.5f, Items.IRON_INGOT, 1)
-            .output(0.55f, Items.IRON_NUGGET, 4)
-            .output(0.25f, Items.IRON_NUGGET, 2)
-    ),
+                .duration(300)
+                .require(ItemTags.ARMOR_CHAINMAIL_LARGE)
+                .output(Items.IRON_INGOT, 3)
+                .output(0.5f, Items.IRON_INGOT, 1)
+                .output(0.55f, Items.IRON_NUGGET, 4)
+                .output(0.25f, Items.IRON_NUGGET, 2)
+        ),
+
         ARMOR_CHAINMAIL_SMALL = create("recycling/general/armor/chainmail_small", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_CHAINMAIL_SMALL)
-            .output(Items.IRON_INGOT, 1)
-            .output(0.25f, Items.IRON_INGOT, 1)
-            .output(0.25f, Items.IRON_NUGGET, 2)
-    ),
+                .duration(300)
+                .require(ItemTags.ARMOR_CHAINMAIL_SMALL)
+                .output(Items.IRON_INGOT, 1)
+                .output(0.25f, Items.IRON_INGOT, 1)
+                .output(0.25f, Items.IRON_NUGGET, 2)
+        ),
 
         ARMOR_IRON_LARGE = create("recycling/general/armor/iron_large", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_IRON_LARGE)
-            .output(Items.IRON_INGOT, 3)
-            .output(0.5f, Items.IRON_INGOT, 1)
-            .output(0.55f, Items.IRON_NUGGET, 4)
-            .output(0.25f, Items.IRON_NUGGET, 2)
-    ),
+                .duration(400)
+                .require(ItemTags.ARMOR_IRON_LARGE)
+                .output(Items.IRON_INGOT, 3)
+                .output(0.5f, Items.IRON_INGOT, 1)
+                .output(0.55f, Items.IRON_NUGGET, 4)
+                .output(0.25f, Items.IRON_NUGGET, 2)
+        ),
+
         ARMOR_IRON_SMALL = create("recycling/general/armor/iron_small", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_IRON_SMALL)
-            .output(Items.IRON_INGOT, 1)
-            .output(0.25f, Items.IRON_INGOT, 1)
-            .output(0.25f, Items.IRON_NUGGET, 2)
-    ),
+                .duration(400)
+                .require(ItemTags.ARMOR_IRON_SMALL)
+                .output(Items.IRON_INGOT, 1)
+                .output(0.25f, Items.IRON_INGOT, 1)
+                .output(0.25f, Items.IRON_NUGGET, 2)
+        ),
 
         ARMOR_GOLDEN_LARGE = create("recycling/general/armor/golden_large", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_GOLDEN_LARGE)
-            .output(Items.GOLD_INGOT, 3)
-            .output(0.5f, Items.GOLD_INGOT, 1)
-            .output(0.55f, Items.GOLD_NUGGET, 4)
-            .output(0.25f, Items.GOLD_NUGGET, 2)
-    ),
+                .duration(400)
+                .require(ItemTags.ARMOR_GOLDEN_LARGE)
+                .output(Items.GOLD_INGOT, 3)
+                .output(0.5f, Items.GOLD_INGOT, 1)
+                .output(0.55f, Items.GOLD_NUGGET, 4)
+                .output(0.25f, Items.GOLD_NUGGET, 2)
+        ),
         ARMOR_GOLDEN_SMALL = create("recycling/general/armor/golden_small", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_GOLDEN_SMALL)
-            .output(Items.GOLD_INGOT, 1)
-            .output(0.25f, Items.GOLD_INGOT, 1)
-            .output(0.25f, Items.GOLD_NUGGET, 2)
-    ),
+                .duration(400)
+                .require(ItemTags.ARMOR_GOLDEN_SMALL)
+                .output(Items.GOLD_INGOT, 1)
+                .output(0.25f, Items.GOLD_INGOT, 1)
+                .output(0.25f, Items.GOLD_NUGGET, 2)
+        ),
 
         ARMOR_DIAMOND_LARGE = create("recycling/general/armor/diamond_large", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_DIAMOND_LARGE)
-            .output(Items.DIAMOND, 3)
-            .output(0.5f, Items.DIAMOND, 1)
-    ),
+                .duration(400)
+                .require(ItemTags.ARMOR_DIAMOND_LARGE)
+                .output(Items.DIAMOND, 3)
+                .output(0.5f, Items.DIAMOND, 1)
+        ),
         ARMOR_DIAMOND_SMALL = create("recycling/general/armor/diamond_small", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_DIAMOND_SMALL)
-            .output(Items.DIAMOND, 1)
-            .output(0.25f, Items.DIAMOND, 1)
-    ),
+                .duration(400)
+                .require(ItemTags.ARMOR_DIAMOND_SMALL)
+                .output(Items.DIAMOND, 1)
+                .output(0.25f, Items.DIAMOND, 1)
+        ),
 
         ARMOR_NETHERITE_LARGE = create("recycling/general/armor/netherite_large", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_NETHERITE_LARGE)
-            .output(Items.DIAMOND, 3)
-            .output(0.5f, Items.DIAMOND, 1)
-            .output(0.55f, Items.NETHERITE_SCRAP, 2)
-            .output(0.25f, Items.DIAMOND, 2)
-    ),
+                .duration(400)
+                .require(ItemTags.ARMOR_NETHERITE_LARGE)
+                .output(Items.DIAMOND, 3)
+                .output(0.5f, Items.DIAMOND, 1)
+                .output(0.55f, Items.NETHERITE_SCRAP, 2)
+                .output(0.25f, Items.DIAMOND, 2)
+        ),
+
         ARMOR_NETHERITE_SMALL = create("recycling/general/armor/netherite_small", b -> b
-            .duration(200)
-            .require(ItemTags.ARMOR_NETHERITE_SMALL)
-            .output(Items.DIAMOND, 1)
-            .output(0.25f, Items.NETHERITE_SCRAP, 2)
-            .output(0.25f, Items.DIAMOND, 2)
-    ),
+                .duration(400)
+                .require(ItemTags.ARMOR_NETHERITE_SMALL)
+                .output(Items.DIAMOND, 1)
+                .output(0.25f, Items.NETHERITE_SCRAP, 2)
+                .output(0.25f, Items.DIAMOND, 2)
+        ),
+
+        ARMOR_COPPER_LARGE = create("recycling/general/armor/copper_large", b -> b
+                .duration(300)
+                .require(ItemTags.ARMOR_COPPER_LARGE)
+                .output(Items.COPPER_INGOT, 3)
+                .output(0.5f, Items.COPPER_INGOT, 1)
+                .output(0.55f, AllItems.COPPER_NUGGET, 4)
+                .output(0.25f, AllItems.COPPER_NUGGET, 2)
+        ),
+
+        ARMOR_COPPER_SMALL = create("recycling/general/armor/copper_small", b -> b
+                .duration(300)
+                .require(ItemTags.ARMOR_COPPER_SMALL)
+                .output(Items.COPPER_INGOT, 1)
+                .output(0.25f, Items.COPPER_INGOT, 1)
+                .output(0.25f, AllItems.COPPER_NUGGET, 2)
+        ),
+
+        ARMOR_COPPER_ANDESITE_MIX_LARGE = create("recycling/general/armor/copper_andesite_mix_large", b -> b
+                .duration(400)
+                .require(ItemTags.ARMOR_COPPER_ANDESITE_ALLOY_MIX_LARGE)
+                .output(Items.COPPER_INGOT, 3)
+                .output(0.5f, Items.COPPER_INGOT, 1)
+                .output(0.15f, Items.COPPER_INGOT, 4)
+                .output(0.25f, AllItems.COPPER_NUGGET, 2)
+                .output(AllItems.ANDESITE_ALLOY, 1)
+                .output(0.45f, AllItems.ANDESITE_ALLOY, 1)
+        ),
+
+        ARMOR_COPPER_ANDESITE_MIX_SMALL = create("recycling/general/armor/copper_andesite_mix_small", b -> b
+                .duration(400)
+                .require(ItemTags.ARMOR_COPPER_ANDESITE_ALLOY_MIX_SMALL)
+                .output(Items.COPPER_INGOT, 1)
+                .output(0.25f, Items.COPPER_INGOT, 1)
+                .output(0.25f, AllItems.COPPER_NUGGET, 2)
+                .output(AllItems.ANDESITE_ALLOY, 1)
+                .output(0.45f, AllItems.ANDESITE_ALLOY, 1)
+        ),
 
 
         COBBLED_DEEPSLATE_FROM_DEEPSLATE = create("content/cobbled_deepslate_from_deepslate", b -> b

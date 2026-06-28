@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-28T07:35:14.6215513	Tags for minecraft:item mod id perfectprocessing
+// 1.21.1	2026-06-28T22:38:47.9437783	Tags for minecraft:item mod id perfectprocessing
 bab798cfb54a319a5a9ce84f8527ee5b25127067 data/perfectprocessing/tags/item/armor/modded/andesite_exoskeleton.json
 aa1eac2d76ea64509f6d787817e8d60185f15f00 data/perfectprocessing/tags/item/armor/modded/andesite_jetpack.json
 330dd9a5b73e5f826cd94af4e9fa8b99e0a3102d data/perfectprocessing/tags/item/armor/modded/brass_exoskeleton.json
@@ -7,10 +7,12 @@ aa1eac2d76ea64509f6d787817e8d60185f15f00 data/perfectprocessing/tags/item/armor/
 32609a82885c60a1a451588886cd9533ad630dd8 data/perfectprocessing/tags/item/armor/modded/brass_small.json
 2e7009cf6b61c2862e6097f33b21bad193ae4377 data/perfectprocessing/tags/item/armor/modded/cardboard_large.json
 4e93eff6c86cdaec864812112d5c689d01990c6d data/perfectprocessing/tags/item/armor/modded/cardboard_small.json
+a95dfd4b97efbcc56922442b30d1cbc4977cd953 data/perfectprocessing/tags/item/armor/modded/copper_andesite_alloy_mix_large.json
+9607b03930849020586e639b1aa6238c9de13f66 data/perfectprocessing/tags/item/armor/modded/copper_andesite_alloy_mix_small.json
 54ed8ad94a1cadef75359e23921c71bf2df3d4af data/perfectprocessing/tags/item/armor/modded/copper_exoskeleton.json
 3fc96efc44e7d0d8ce18d4a3a4358866d87bcc9c data/perfectprocessing/tags/item/armor/modded/copper_jetpack.json
 338873e0bf8d63f7111c68c35e6436036c58f044 data/perfectprocessing/tags/item/armor/modded/copper_large.json
-b431fc265465989387dd3f78f78b80a1b8a1b855 data/perfectprocessing/tags/item/armor/modded/copper_small.json
+72ba95f6959d702d16b274ccf46b979b385aece3 data/perfectprocessing/tags/item/armor/modded/copper_small.json
 66818249b934e67fd9cfc3fd4ae0076dad2a542c data/perfectprocessing/tags/item/armor/modded/iron_space_suit_large.json
 80007f587b2607517a9c8a5bf623e79d4382b915 data/perfectprocessing/tags/item/armor/modded/iron_space_suit_small.json
 3bb3c0b274d6af2a8aef608ff8012d9a3977164d data/perfectprocessing/tags/item/armor/modded/martian_steel_large.json

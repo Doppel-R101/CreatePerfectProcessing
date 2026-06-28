@@ -1,6 +1,7 @@
 {
   "values": [
     "create_sa:copper_helmet",
-    "create_sa:copper_boots"
+    "create_sa:copper_boots",
+    "create:copper_diving_helmet"
   ]
 }

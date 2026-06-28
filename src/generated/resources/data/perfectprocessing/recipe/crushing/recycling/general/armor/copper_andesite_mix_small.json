@@ -1,0 +1,30 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "perfectprocessing:armor/modded/copper_andesite_alloy_mix_small"
+    }
+  ],
+  "processing_time": 400,
+  "results": [
+    {
+      "id": "minecraft:copper_ingot"
+    },
+    {
+      "chance": 0.25,
+      "id": "minecraft:copper_ingot"
+    },
+    {
+      "chance": 0.25,
+      "count": 2,
+      "id": "create:copper_nugget"
+    },
+    {
+      "id": "create:andesite_alloy"
+    },
+    {
+      "chance": 0.45,
+      "id": "create:andesite_alloy"
+    }
+  ]
+}

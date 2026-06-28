@@ -115,6 +115,9 @@ public class PerfectTags {
         public static final TagKey<Item> ARMOR_MARTIAN_STEEL_SPACE_SUIT_LARGE = createTag("armor/modded/martian_steel_space_suit_large");
         public static final TagKey<Item> ARMOR_MARTIAN_STEEL_SPACE_SUIT_NORMAL = createTag("armor/modded/martian_steel_space_suit_normal");
         public static final TagKey<Item> ARMOR_MARTIAN_STEEL_SPACE_SUIT_SMALL = createTag("armor/modded/martian_steel_space_suit_small");
+        public static final TagKey<Item> ARMOR_COPPER_ANDESITE_ALLOY_MIX_LARGE = createTag("armor/modded/copper_andesite_alloy_mix_large");
+        public static final TagKey<Item> ARMOR_COPPER_ANDESITE_ALLOY_MIX_MEDIUM = createTag("armor/modded/copper_andesite_alloy_mix_medium");
+        public static final TagKey<Item> ARMOR_COPPER_ANDESITE_ALLOY_MIX_SMALL = createTag("armor/modded/copper_andesite_alloy_mix_small");
     }
 
     private static TagKey<Item> createTag(String name) {

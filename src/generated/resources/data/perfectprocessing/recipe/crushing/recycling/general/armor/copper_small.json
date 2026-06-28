@@ -2,22 +2,22 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "tag": "perfectprocessing:armor/vanilla/chainmail_small"
+      "tag": "perfectprocessing:armor/modded/copper_small"
     }
   ],
   "processing_time": 300,
   "results": [
     {
-      "id": "minecraft:iron_ingot"
+      "id": "minecraft:copper_ingot"
     },
     {
       "chance": 0.25,
-      "id": "minecraft:iron_ingot"
+      "id": "minecraft:copper_ingot"
     },
     {
       "chance": 0.25,
       "count": 2,
-      "id": "minecraft:iron_nugget"
+      "id": "create:copper_nugget"
     }
   ]
 }

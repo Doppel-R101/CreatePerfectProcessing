@@ -2,28 +2,28 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "tag": "perfectprocessing:armor/vanilla/iron_large"
+      "tag": "perfectprocessing:armor/modded/copper_large"
     }
   ],
-  "processing_time": 400,
+  "processing_time": 300,
   "results": [
     {
       "count": 3,
-      "id": "minecraft:iron_ingot"
+      "id": "minecraft:copper_ingot"
     },
     {
       "chance": 0.5,
-      "id": "minecraft:iron_ingot"
+      "id": "minecraft:copper_ingot"
     },
     {
       "chance": 0.55,
       "count": 4,
-      "id": "minecraft:iron_nugget"
+      "id": "create:copper_nugget"
     },
     {
       "chance": 0.25,
       "count": 2,
-      "id": "minecraft:iron_nugget"
+      "id": "create:copper_nugget"
     }
   ]
 }
