@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "perfectprocessing:armor/vanilla/leather_large"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "count": 3,
+      "id": "minecraft:leather"
+    },
+    {
+      "chance": 0.5,
+      "id": "minecraft:leather"
+    },
+    {
+      "chance": 0.25,
+      "id": "minecraft:leather"
+    }
+  ]
+}

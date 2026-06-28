@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "perfectprocessing:armor/vanilla/golden_small"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "id": "minecraft:gold_ingot"
+    },
+    {
+      "chance": 0.25,
+      "id": "minecraft:gold_ingot"
+    },
+    {
+      "chance": 0.25,
+      "count": 2,
+      "id": "minecraft:gold_nugget"
+    }
+  ]
+}
