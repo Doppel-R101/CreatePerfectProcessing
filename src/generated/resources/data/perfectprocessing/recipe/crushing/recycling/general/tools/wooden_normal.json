@@ -1,0 +1,27 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "perfectprocessing:tools/vanilla/wooden_normal"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "chance": 0.5,
+      "id": "minecraft:oak_planks"
+    },
+    {
+      "id": "minecraft:stick"
+    },
+    {
+      "chance": 0.33,
+      "id": "minecraft:oak_planks"
+    },
+    {
+      "chance": 0.66,
+      "count": 2,
+      "id": "minecraft:stick"
+    }
+  ]
+}

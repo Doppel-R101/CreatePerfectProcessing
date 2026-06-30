@@ -319,6 +319,168 @@ public class PerfectCrushingRecipeProvider extends CrushingRecipeGen {
                 .output(0.45f, AllItems.ANDESITE_ALLOY, 1)
         ),
 
+        TOOLS_WOODEN_LARGE = create("recycling/general/tools/wooden_large", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_WOODEN_LARGE)
+                .output(Items.OAK_PLANKS, 1)
+                .output(Items.STICK, 1)
+                .output(0.50f, Items.OAK_PLANKS, 1)
+                .output(0.66f, Items.STICK, 2)
+        ),
+
+        TOOLS_WOODEN_NORMAL = create("recycling/general/tools/wooden_normal", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_WOODEN_NORMAL)
+                .output(0.50f, Items.OAK_PLANKS, 1)
+                .output(Items.STICK, 1)
+                .output(0.33f, Items.OAK_PLANKS, 1)
+                .output(0.66f, Items.STICK, 2)
+        ),
+
+        TOOLS_WOODEN_SMALL = create("recycling/general/tools/wooden_small", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_WOODEN_SMALL)
+                .output(Items.STICK, 1)
+                .output(0.33f, Items.OAK_PLANKS, 1)
+                .output(0.50f, Items.STICK, 1)
+        ),
+
+        TOOLS_STONE_LARGE = create("recycling/general/tools/stone_large", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_STONE_LARGE)
+                .output(Items.COBBLESTONE, 1)
+                .output(Items.STICK, 1)
+                .output(0.50f, Items.COBBLESTONE, 1)
+                .output(0.50f, Items.STICK, 1)
+        ),
+
+        TOOLS_STONE_NORMAL = create("recycling/general/tools/stone_normal", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_STONE_NORMAL)
+                .output(0.50f, Items.COBBLESTONE, 1)
+                .output(Items.STICK, 1)
+                .output(0.33f, Items.COBBLESTONE, 1)
+        ),
+
+        TOOLS_STONE_SMALL = create("recycling/general/tools/stone_small", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_STONE_SMALL)
+                .output(Items.STICK, 1)
+                .output(0.33f, Items.COBBLESTONE, 1)
+                .output(0.50f, Items.STICK, 1)
+        ),
+
+        TOOLS_IRON_LARGE = create("recycling/general/tools/iron_large", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_IRON_LARGE)
+                .output(Items.IRON_INGOT, 1)
+                .output(Items.STICK, 1)
+                .output(0.50f, Items.IRON_INGOT, 1)
+                .output(0.50f, Items.STICK, 1)
+        ),
+
+        TOOLS_IRON_NORMAL = create("recycling/general/tools/iron_normal", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_IRON_NORMAL)
+                .output(0.50f, Items.IRON_INGOT, 1)
+                .output(Items.STICK, 1)
+                .output(0.33f, Items.IRON_INGOT, 1)
+        ),
+
+        TOOLS_IRON_SMALL = create("recycling/general/tools/iron_small", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_IRON_SMALL)
+                .output(Items.STICK, 1)
+                .output(0.33f, Items.IRON_INGOT, 1)
+                .output(0.50f, Items.STICK, 1)
+        ),
+
+        TOOLS_GOLDEN_LARGE = create("recycling/general/tools/golden_large", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_GOLDEN_LARGE)
+                .output(Items.GOLD_INGOT, 1)
+                .output(Items.STICK, 1)
+                .output(0.50f, Items.GOLD_INGOT, 1)
+                .output(0.50f, Items.STICK, 1)
+        ),
+
+        TOOLS_GOLDEN_NORMAL = create("recycling/general/tools/golden_normal", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_GOLDEN_NORMAL)
+                .output(0.50f, Items.GOLD_INGOT, 1)
+                .output(Items.STICK, 1)
+                .output(0.33f, Items.GOLD_INGOT, 1)
+        ),
+
+        TOOLS_GOLDEN_SMALL = create("recycling/general/tools/golden_small", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_GOLDEN_SMALL)
+                .output(Items.STICK, 1)
+                .output(0.33f, Items.GOLD_INGOT, 1)
+                .output(0.50f, Items.STICK, 1)
+        ),
+
+        TOOLS_DIAMOND_LARGE = create("recycling/general/tools/diamond_large", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_DIAMOND_LARGE)
+                .output(Items.DIAMOND, 1)
+                .output(Items.STICK, 1)
+                .output(0.50f, Items.DIAMOND, 1)
+                .output(0.50f, Items.STICK, 1)
+        ),
+
+        TOOLS_DIAMOND_NORMAL = create("recycling/general/tools/diamond_normal", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_DIAMOND_NORMAL)
+                .output(0.50f, Items.DIAMOND, 1)
+                .output(Items.STICK, 1)
+                .output(0.33f, Items.DIAMOND, 1)
+        ),
+
+        TOOLS_DIAMOND_SMALL = create("recycling/general/tools/diamond_small", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_DIAMOND_SMALL)
+                .output(Items.STICK, 1)
+                .output(0.33f, Items.DIAMOND, 1)
+                .output(0.50f, Items.STICK, 1)
+        ),
+
+        TOOLS_NETHERITE_LARGE = create("recycling/general/tools/netherite_large", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_DIAMOND_LARGE)
+                .output(Items.DIAMOND, 1)
+                .output(Items.STICK, 1)
+                .output(0.50f, Items.DIAMOND, 1)
+                .output(0.50f, Items.NETHERITE_SCRAP, 1)
+                .output(0.50f, Items.GOLD_INGOT, 1)
+                .output(0.50f, Items.STICK, 1)
+                .output(0.33f, Items.NETHERITE_SCRAP, 1)
+        ),
+
+        TOOLS_NETHERITE_NORMAL = create("recycling/general/tools/netherite_normal", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_DIAMOND_NORMAL)
+                .output(0.50f, Items.DIAMOND, 1)
+                .output(0.50f, Items.NETHERITE_SCRAP, 1)
+                .output(0.50f, Items.GOLD_INGOT, 1)
+                .output(Items.STICK, 1)
+                .output(0.33f, Items.DIAMOND, 1)
+                .output(0.33f, Items.NETHERITE_SCRAP, 1)
+        ),
+
+        TOOLS_NETHERITE_SMALL = create("recycling/general/tools/netherite_small", b -> b
+                .duration(200)
+                .require(ItemTags.TOOLS_DIAMOND_SMALL)
+                .output(Items.STICK, 1)
+                .output(0.33f, Items.DIAMOND, 1)
+                .output(0.50f, Items.NETHERITE_SCRAP, 1)
+                .output(0.50f, Items.GOLD_INGOT, 1)
+                .output(0.50f, Items.STICK, 1)
+                .output(0.33f, Items.NETHERITE_SCRAP, 1)
+        ),
+
+
+
 
         COBBLED_DEEPSLATE_FROM_DEEPSLATE = create("content/cobbled_deepslate_from_deepslate", b -> b
                 .duration(250)
