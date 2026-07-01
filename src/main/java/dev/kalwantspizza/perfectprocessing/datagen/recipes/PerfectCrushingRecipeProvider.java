@@ -495,7 +495,7 @@ public class PerfectCrushingRecipeProvider extends CrushingRecipeGen {
                 .withCondition(new NotCondition(new ModLoadedCondition(Northstar.MOD_ID)))
         ),
 
-        RUTILE_CONCENTRATE_FROM_LIMESTONE = create("compat/northstar/rutile_concentrate_from_limestone", b -> b
+        RUTILE_CONCENTRATE_FROM_LIMESTONE = create("content/compat/northstar/rutile_concentrate_from_limestone", b -> b
                 .duration(250)
                 .require(AllPaletteStoneTypes.LIMESTONE.getBaseBlock().get())
                 .output(0.30f, AllItems.COPPER_NUGGET)
@@ -503,7 +503,7 @@ public class PerfectCrushingRecipeProvider extends CrushingRecipeGen {
                 .withCondition(new ModLoadedCondition(Northstar.MOD_ID))
         ),
 
-        NICKEL_NUGGET_FROM_SCORCHIA = create("compat/creatingspace/nickel_nugget_from_scorchia", b -> b
+        NICKEL_NUGGET_FROM_SCORCHIA = create("content/compat/creatingspace/nickel_nugget_from_scorchia", b -> b
                 .duration(250)
                 .require(AllPaletteStoneTypes.SCORCHIA.getBaseBlock().get())
                 .output(0.30f, ItemInit.NICKEL_NUGGET)
