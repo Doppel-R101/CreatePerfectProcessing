@@ -181,7 +181,7 @@ dependencies {
     // Creating Space
     implementation("maven.modrinth:creating-space:1.7.18")
     // Critters and Companions
-    //implementation("maven.modrinth:critters-and-companions:hMjp6aKn")
+    implementation("maven.modrinth:critters-and-companions:hMjp6aKn")
     //
     //implementation("maven.modrinth::")
 

@@ -1,6 +1,7 @@
 package dev.kalwantspizza.perfectprocessing.datagen;
 
 import dev.kalwantspizza.perfectprocessing.datagen.recipes.PerfectCrushingRecipeProvider;
+import dev.kalwantspizza.perfectprocessing.datagen.recipes.PerfectHauntingRecipeGen;
 import dev.kalwantspizza.perfectprocessing.datagen.recipes.PerfectProcessingRecipeGen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -19,6 +20,7 @@ public class PerfectDataGenerators {
 
         generator.addProvider(event.includeServer(), new PerfectItemTagProvider(packOutput, lookupProvider, existingFileHelper));
         generator.addProvider(event.includeServer(), new PerfectCrushingRecipeProvider(packOutput, lookupProvider));
+        //generator.addProvider(event.includeServer(), new PerfectHauntingRecipeGen(packOutput, lookupProvider, ));
         if (event.includeServer()) {
             PerfectProcessingRecipeGen.registerAllProcessing(generator, packOutput, lookupProvider);
         }
