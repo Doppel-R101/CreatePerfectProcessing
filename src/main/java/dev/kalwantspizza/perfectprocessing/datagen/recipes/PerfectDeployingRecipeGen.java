@@ -21,12 +21,5 @@ public class PerfectDeployingRecipeGen extends DeployingRecipeGen {
             .require(Items.BUCKET)
             .output(Items.POWDER_SNOW_BUCKET)
 
-    ),
-
-            ENDER_EYE_FROM_POLISHING_CRYING_OBSIDIAN = create("content/ender_eye_from_polishing_crying_obsidian", b -> b
-            .require(Items.CRYING_OBSIDIAN)
-            .require(AllItems.SAND_PAPER)
-            .output(Items.ENDER_EYE)
-
     );
 }

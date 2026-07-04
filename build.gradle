@@ -182,6 +182,8 @@ dependencies {
     implementation("maven.modrinth:creating-space:1.7.18")
     // Critters and Companions
     implementation("maven.modrinth:critters-and-companions:hMjp6aKn")
+    // Zeta (for Quark Compat)
+    implementation("maven.modrinth:MVARlG2f:9GjNW2Gf")
     //
     //implementation("maven.modrinth::")
 
