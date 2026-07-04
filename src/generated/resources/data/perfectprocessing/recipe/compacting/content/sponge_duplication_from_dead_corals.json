@@ -1,0 +1,41 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:sponge"
+    },
+    {
+      "tag": "perfectprocessing:blocks/all_dried_coral_types"
+    },
+    {
+      "tag": "perfectprocessing:blocks/all_dried_coral_types"
+    },
+    {
+      "tag": "perfectprocessing:blocks/all_dried_coral_types"
+    },
+    {
+      "tag": "perfectprocessing:blocks/all_dried_coral_types"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "minecraft:sponge"
+    },
+    {
+      "chance": 0.25,
+      "id": "minecraft:sponge"
+    }
+  ]
+}

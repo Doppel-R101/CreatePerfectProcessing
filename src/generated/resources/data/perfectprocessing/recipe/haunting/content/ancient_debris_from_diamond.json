@@ -1,0 +1,30 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/diamond"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.16,
+      "id": "minecraft:ancient_debris"
+    },
+    {
+      "chance": 0.3,
+      "id": "minecraft:obsidian"
+    },
+    {
+      "chance": 0.12,
+      "id": "minecraft:coal_block"
+    },
+    {
+      "chance": 0.05,
+      "id": "create:powdered_obsidian"
+    },
+    {
+      "chance": 0.02,
+      "id": "minecraft:charcoal"
+    }
+  ]
+}

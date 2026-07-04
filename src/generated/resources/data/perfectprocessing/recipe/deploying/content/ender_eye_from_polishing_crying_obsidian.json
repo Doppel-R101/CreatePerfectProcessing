@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:crying_obsidian"
+    },
+    {
+      "item": "create:sand_paper"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:ender_eye"
+    }
+  ]
+}

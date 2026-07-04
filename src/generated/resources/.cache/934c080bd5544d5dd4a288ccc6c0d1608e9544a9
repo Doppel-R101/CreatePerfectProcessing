@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-28T22:38:47.9437783	Tags for minecraft:item mod id perfectprocessing
+// 1.21.1	2026-07-04T23:00:12.9987202	Tags for minecraft:item mod id perfectprocessing
 bab798cfb54a319a5a9ce84f8527ee5b25127067 data/perfectprocessing/tags/item/armor/modded/andesite_exoskeleton.json
 aa1eac2d76ea64509f6d787817e8d60185f15f00 data/perfectprocessing/tags/item/armor/modded/andesite_jetpack.json
 330dd9a5b73e5f826cd94af4e9fa8b99e0a3102d data/perfectprocessing/tags/item/armor/modded/brass_exoskeleton.json
@@ -34,6 +34,7 @@ ed5b16f716fec3ed3dfeb374ba6e6822e0c343cb data/perfectprocessing/tags/item/armor/
 6e3a93b9f5969fe2c0a8e96b6ca0830284821588 data/perfectprocessing/tags/item/armor/vanilla/leather_small.json
 9218dff75da29dab0511f915aae2b325d36e9eac data/perfectprocessing/tags/item/armor/vanilla/netherite_large.json
 9d99801a31cfcffc6afc6fd2eebb38fcfb16bd8c data/perfectprocessing/tags/item/armor/vanilla/netherite_small.json
+47fe56636d32cf969cf28c50a3c4dc289b441175 data/perfectprocessing/tags/item/blocks/all_coral_types.json
 d29f8c939662b6af41885164c450a39abd5deb36 data/perfectprocessing/tags/item/copycats/scrap_cogwheels.json
 9dfe591a9201913ea6b7dd2dd2bb33601e929b55 data/perfectprocessing/tags/item/copycats/scrap_iron_door.json
 0da28366b1bf63e2e26bc489ae00e608f1fa84db data/perfectprocessing/tags/item/copycats/scrap_large.json

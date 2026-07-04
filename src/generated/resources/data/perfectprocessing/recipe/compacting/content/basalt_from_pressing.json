@@ -1,0 +1,31 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:blue_ice"
+    },
+    {
+      "item": "minecraft:soul_soil"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 500,
+      "tag": "minecraft:lava"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:coal"
+    },
+    {
+      "count": 2,
+      "id": "minecraft:basalt"
+    },
+    {
+      "id": "minecraft:blue_ice"
+    },
+    {
+      "id": "minecraft:soul_soil"
+    }
+  ]
+}
