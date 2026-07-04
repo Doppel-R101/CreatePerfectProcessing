@@ -118,6 +118,9 @@ public class PerfectTags {
         public static final TagKey<Item> ARMOR_COPPER_ANDESITE_ALLOY_MIX_LARGE = createTag("armor/modded/copper_andesite_alloy_mix_large");
         public static final TagKey<Item> ARMOR_COPPER_ANDESITE_ALLOY_MIX_MEDIUM = createTag("armor/modded/copper_andesite_alloy_mix_medium");
         public static final TagKey<Item> ARMOR_COPPER_ANDESITE_ALLOY_MIX_SMALL = createTag("armor/modded/copper_andesite_alloy_mix_small");
+
+        public static final TagKey<Item> ALL_CORAL_TYPES = createTag("blocks/all_coral_types");
+        public static final TagKey<Item> ALL_DRIED_CORAL_TYPES = createTag("blocks/all_dried_coral_types");
     }
 
     private static TagKey<Item> createTag(String name) {

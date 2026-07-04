@@ -1,8 +1,6 @@
 package dev.kalwantspizza.perfectprocessing.datagen;
 
-import dev.kalwantspizza.perfectprocessing.datagen.recipes.PerfectCrushingRecipeProvider;
-import dev.kalwantspizza.perfectprocessing.datagen.recipes.PerfectHauntingRecipeGen;
-import dev.kalwantspizza.perfectprocessing.datagen.recipes.PerfectProcessingRecipeGen;
+import dev.kalwantspizza.perfectprocessing.datagen.recipes.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -19,8 +17,13 @@ public class PerfectDataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         generator.addProvider(event.includeServer(), new PerfectItemTagProvider(packOutput, lookupProvider, existingFileHelper));
-        generator.addProvider(event.includeServer(), new PerfectCrushingRecipeProvider(packOutput, lookupProvider));
-        //generator.addProvider(event.includeServer(), new PerfectHauntingRecipeGen(packOutput, lookupProvider, ));
+        generator.addProvider(event.includeServer(), new PerfectCrushingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectHauntingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectCompactingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectMixingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectItemApplicationRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectDeployingRecipeGen(packOutput, lookupProvider));
+
         if (event.includeServer()) {
             PerfectProcessingRecipeGen.registerAllProcessing(generator, packOutput, lookupProvider);
         }

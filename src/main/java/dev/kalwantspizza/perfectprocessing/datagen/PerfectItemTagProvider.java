@@ -460,5 +460,42 @@ public class PerfectItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.ARMOR_COPPER_EXOSKELETON).add(
                 CreateSaModItems.COPPER_EXOSKELETON_CHESTPLATE.get()
         );
+
+        // Corals
+        tag(ItemTags.ALL_CORAL_TYPES).add(
+                Items.BRAIN_CORAL,
+                Items.BRAIN_CORAL_BLOCK,
+                Items.BRAIN_CORAL_FAN,
+                Items.FIRE_CORAL,
+                Items.FIRE_CORAL_BLOCK,
+                Items.FIRE_CORAL_FAN,
+                Items.HORN_CORAL,
+                Items.HORN_CORAL_BLOCK,
+                Items.HORN_CORAL_FAN,
+                Items.BUBBLE_CORAL,
+                Items.BUBBLE_CORAL_BLOCK,
+                Items.BUBBLE_CORAL_FAN,
+                Items.TUBE_CORAL,
+                Items.TUBE_CORAL_BLOCK,
+                Items.TUBE_CORAL_FAN
+        );
+        // Dead Corals
+        tag(ItemTags.ALL_CORAL_TYPES).add(
+                Items.DEAD_BRAIN_CORAL,
+                Items.DEAD_BRAIN_CORAL_BLOCK,
+                Items.DEAD_BRAIN_CORAL_FAN,
+                Items.DEAD_FIRE_CORAL,
+                Items.DEAD_FIRE_CORAL_BLOCK,
+                Items.DEAD_FIRE_CORAL_FAN,
+                Items.DEAD_HORN_CORAL,
+                Items.DEAD_HORN_CORAL_BLOCK,
+                Items.DEAD_HORN_CORAL_FAN,
+                Items.DEAD_BUBBLE_CORAL,
+                Items.DEAD_BUBBLE_CORAL_BLOCK,
+                Items.DEAD_BUBBLE_CORAL_FAN,
+                Items.DEAD_TUBE_CORAL,
+                Items.DEAD_TUBE_CORAL_BLOCK,
+                Items.DEAD_TUBE_CORAL_FAN
+        );
     }
 }

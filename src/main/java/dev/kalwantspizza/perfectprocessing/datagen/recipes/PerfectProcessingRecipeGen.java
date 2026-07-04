@@ -13,6 +13,6 @@ public class PerfectProcessingRecipeGen {
     public static void registerAllProcessing(DataGenerator gen, PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         final List<ProcessingRecipeGen<?, ?, ?>> GENERATORS = new ArrayList<>();
 
-        GENERATORS.add(new PerfectCrushingRecipeProvider(output, registries));
+        GENERATORS.add(new PerfectCrushingRecipeGen(output, registries));
     }
 }

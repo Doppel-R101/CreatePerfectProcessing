@@ -22,7 +22,7 @@ import com.copycatsplus.copycats.Copycats;
 import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
 
 @SuppressWarnings("unused")
-public class PerfectCrushingRecipeProvider extends CrushingRecipeGen {
+public class PerfectCrushingRecipeGen extends CrushingRecipeGen {
 
     GeneratedRecipe
 
@@ -527,7 +527,7 @@ public class PerfectCrushingRecipeProvider extends CrushingRecipeGen {
      * End of recipe list
      */
 
-    public PerfectCrushingRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+    public PerfectCrushingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, PerfectProcessing.MODID);
     }
 }
