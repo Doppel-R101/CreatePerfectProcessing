@@ -1,5 +1,8 @@
 package dev.kalwantspizza.perfectprocessing;
 
+import com.simibubi.create.AllBlocks;
+import com.simibubi.create.AllCreativeModeTabs;
+import com.simibubi.create.AllItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -92,11 +95,17 @@ public class perfectprocessing
         Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
     }
 
-    // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        //if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
-        //    event.accept(EXAMPLE_BLOCK_ITEM);
+        // Re-adds chromatic compund and relatives to the base Create tab
+        if (event.getTabKey() == AllCreativeModeTabs.BASE_CREATIVE_TAB.getKey()) {
+            event.insertAfter(AllItems.BRASS_INGOT.asStack(), AllItems.CHROMATIC_COMPOUND.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(AllItems.CHROMATIC_COMPOUND.asStack(), AllItems.SHADOW_STEEL.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(AllItems.SHADOW_STEEL.asStack(), AllItems.REFINED_RADIANCE.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(AllBlocks.COPPER_CASING.asStack(), AllBlocks.SHADOW_STEEL_CASING.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(AllBlocks.SHADOW_STEEL_CASING.asStack(), AllBlocks.REFINED_RADIANCE_CASING.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
