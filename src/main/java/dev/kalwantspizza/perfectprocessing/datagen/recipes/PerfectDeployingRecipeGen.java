@@ -1,6 +1,5 @@
 package dev.kalwantspizza.perfectprocessing.datagen.recipes;
 
-import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.DeployingRecipeGen;
 import dev.kalwantspizza.perfectprocessing.PerfectProcessing;
 import net.minecraft.core.HolderLookup;
@@ -9,6 +8,7 @@ import net.minecraft.world.item.Items;
 
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("unused")
 public class PerfectDeployingRecipeGen extends DeployingRecipeGen {
     public PerfectDeployingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, PerfectProcessing.MODID);

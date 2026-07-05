@@ -7,14 +7,13 @@ import dev.kalwantspizza.perfectprocessing.PerfectProcessing;
 import dev.kalwantspizza.perfectprocessing.PerfectTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.FluidTags;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("unused")
 public class PerfectCompactingRecipeGen extends CompactingRecipeGen {
     public PerfectCompactingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, PerfectProcessing.MODID);

@@ -18,6 +18,7 @@ import org.violetmoon.zeta.config.FlagCondition;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("unused")
 public class PerfectStandardRecipeGen extends RecipeProvider {
     public PerfectStandardRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);

@@ -8,6 +8,7 @@ import net.minecraft.world.item.Items;
 
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("unused")
 public class PerfectMillingRecipeGen extends MillingRecipeGen {
     public PerfectMillingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, PerfectProcessing.MODID);

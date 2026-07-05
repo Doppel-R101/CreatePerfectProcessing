@@ -10,6 +10,7 @@ import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("unused")
 public class PerfectItemApplicationRecipeGen extends ItemApplicationRecipeGen {
     public PerfectItemApplicationRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, PerfectProcessing.MODID);

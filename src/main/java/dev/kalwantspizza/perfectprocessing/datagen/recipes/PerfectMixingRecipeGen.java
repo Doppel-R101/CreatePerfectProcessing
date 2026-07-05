@@ -3,7 +3,6 @@ package dev.kalwantspizza.perfectprocessing.datagen.recipes;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.AllTags;
 import com.simibubi.create.api.data.recipe.MixingRecipeGen;
-import com.simibubi.create.content.legacy.ChromaticCompoundItem;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
 import dev.kalwantspizza.perfectprocessing.PerfectProcessing;
 import net.minecraft.core.HolderLookup;
@@ -13,6 +12,7 @@ import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("unused")
 public class PerfectMixingRecipeGen extends MixingRecipeGen {
     public PerfectMixingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, PerfectProcessing.MODID);

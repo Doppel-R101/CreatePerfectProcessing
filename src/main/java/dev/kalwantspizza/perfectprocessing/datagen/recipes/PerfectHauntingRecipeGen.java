@@ -14,6 +14,7 @@ import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
 
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("unused")
 public class PerfectHauntingRecipeGen extends HauntingRecipeGen {
 
 
