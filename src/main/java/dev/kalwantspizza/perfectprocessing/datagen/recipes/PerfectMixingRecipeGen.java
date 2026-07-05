@@ -37,6 +37,12 @@ public class PerfectMixingRecipeGen extends MixingRecipeGen {
                 .requiresHeat(HeatCondition.HEATED)
     ),
 
+            DIORITE_AS_MIXING = create("content/diorite_as_mixing", b -> b
+                .require(Items.ANDESITE)
+                .require(Items.COBBLESTONE)
+		        .output(Items.DIORITE)
+    ),
+
             CHROMATIC_COMPOUND_FROM_MIXING = create("content/chromatic_compound_from_mixing", b -> b
                 .require(Tags.Items.DUSTS_GLOWSTONE)
                 .require(Tags.Items.DUSTS_GLOWSTONE)

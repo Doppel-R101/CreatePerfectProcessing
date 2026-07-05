@@ -134,58 +134,64 @@ dependencies {
 
     // Dependencies for Datagen
 
-    // Deco
+    // Deco 2.1.3
     implementation("maven.modrinth:create-deco:2.1.3")
-    // Railway Navigator
+    // Railway Navigator beta-0.9.1
     implementation("maven.modrinth:create-railways-navigator:1.21.1-beta-0.9.1-C6")
-    // Bells and Whistles
+    // Bells and Whistles 0.4.7
     implementation("maven.modrinth:bellsandwhistles:v0.4.7-1.21.1")
-    // Train Parts
+    // Train Parts 0.4.0
     implementation("maven.modrinth:create-train-parts:UwPDQjGx")
-    // Petrol Parts
+    // Petrol Parts 1.2.10
     implementation("maven.modrinth:petrols-parts:1.21.1-1.2.10")
-    // Bits n Bobs
+    // Bits n Bobs 0.0.44
     implementation("maven.modrinth:create-bits-n-bobs:0.0.44")
-    // Copycats
+    // Copycats 3.0.4
     implementation("maven.modrinth:copycats:3.0.4+mc.1.21.1-neoforge")
-    // Connected
+    // Connected 1.2.0
     implementation("maven.modrinth:create-connected:1.2.0-mc1.21.1")
-    // Northstar
+    // Northstar 0.5.4
     implementation("maven.modrinth:northstar-redux:0.5.4+1.21.1")
-    // Power Loader
+    // Power Loader 2.0.5
     implementation("maven.modrinth:create-power-loader:2.0.5-mc1.21.1")
-    // Stuffs n Additions
+    // Stuffs n Additions 2.1.3
     implementation("maven.modrinth:create-stuff-additions:2.1.3")
-    // Trading Floor
+    // Trading Floor 3.0.16
     implementation("maven.modrinth:create-trading-floor:3.0.16")
-    // Slice and Dice
+    // Slice and Dice 4.2.4
     implementation("maven.modrinth:slice-and-dice:4.2.4")
-    // Backpacks
+    // Backpacks 3.25.57.1871
     implementation("maven.modrinth:sophisticated-backpacks:1.21.1-3.25.57.1871")
-    // Kotlin for Forge
+    // Kotlin for Forge 5.11.0
     implementation("maven.modrinth:kotlin-for-forge:5.11.0")
-    // Dragon Lib
+    // Dragon Lib 3.0.28
     implementation("maven.modrinth:dragonlib:x376YU9w")
-    // Petrol Park
+    // Petrol Park 1.4.35
     implementation("maven.modrinth:petrolpark:1.21.1-1.4.35")
-    // Sophisticated Core
+    // Sophisticated Core 1.4.53.2003
     implementation("maven.modrinth:sophisticated-core:1.21.1-1.4.53.2003")
-    // Geckolib
+    // Geckolib 4.8.4
     implementation("maven.modrinth:geckolib:gFmrC8Ru")
-    // Vanilla Backport
+    // Vanilla Backport 1.1.7.10
     implementation("maven.modrinth:vanillabackport:rUSWdBok")
-    // Platform
+    // Platform 1.3.3
     implementation("maven.modrinth:platform:v7P0nBi2")
-    // Steam 'n' Rails
+    // Steam 'n' Rails 0.2.1
     implementation("maven.modrinth:create-steam-n-rails-1.21.1:0.2.1+neoforge-mc1.21.1")
-    // Creating Space
+    // Creating Space 1.7.18
     implementation("maven.modrinth:creating-space:1.7.18")
-    // Critters and Companions
+    // Critters and Companions 2.4.1
     implementation("maven.modrinth:critters-and-companions:hMjp6aKn")
-    // Zeta (for Quark Compat)
+    // Zeta (for Quark Compat) 1.1-40
     implementation("maven.modrinth:MVARlG2f:9GjNW2Gf")
+    // Quark 4.1-481
+    implementation("maven.modrinth:qnQsVE2z:11lDI5sg")
+    // Supplementaries 3.7.7
+    implementation("maven.modrinth:fFEIiSDQ:FPL7hXrE")
+    // Moonlight 3.0.22
+    implementation("maven.modrinth:twkfQtEc:JtfVx8PK")
     //
-    //implementation("maven.modrinth::")
+    //implementation("MAVEN")
 
 
     // Example optional mod dependency with JEI

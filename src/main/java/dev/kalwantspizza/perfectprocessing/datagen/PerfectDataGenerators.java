@@ -23,6 +23,8 @@ public class PerfectDataGenerators {
         generator.addProvider(event.includeServer(), new PerfectMixingRecipeGen(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new PerfectItemApplicationRecipeGen(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new PerfectDeployingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectStandardRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectFillingRecipeGen(packOutput, lookupProvider));
 
         if (event.includeServer()) {
             PerfectProcessingRecipeGen.registerAllProcessing(generator, packOutput, lookupProvider);
