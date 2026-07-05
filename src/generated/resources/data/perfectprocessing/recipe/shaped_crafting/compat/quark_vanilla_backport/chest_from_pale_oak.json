@@ -3,13 +3,21 @@
     {
       "type": "zeta:flag",
       "flag": "variant_chests"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vanillabackport"
     }
   ],
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "redstone",
   "key": {
     "#": {
-      "item": "minecraft:pale_oak_log"
+      "item": "minecraft:pale_oak_planks"
     }
   },
   "pattern": [
@@ -18,7 +26,7 @@
     "###"
   ],
   "result": {
-    "count": 4,
+    "count": 1,
     "id": "minecraft:chest"
   }
 }

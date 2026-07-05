@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "supplementaries"
+    }
+  ],
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "supplementaries:flint_block"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 100,
+      "tag": "c:lava"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:deepslate"
+    }
+  ]
+}
