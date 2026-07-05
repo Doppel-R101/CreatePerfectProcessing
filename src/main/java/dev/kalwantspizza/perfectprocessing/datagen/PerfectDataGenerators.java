@@ -17,14 +17,18 @@ public class PerfectDataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         generator.addProvider(event.includeServer(), new PerfectItemTagProvider(packOutput, lookupProvider, existingFileHelper));
-        generator.addProvider(event.includeServer(), new PerfectCrushingRecipeGen(packOutput, lookupProvider));
-        generator.addProvider(event.includeServer(), new PerfectHauntingRecipeGen(packOutput, lookupProvider));
+
         generator.addProvider(event.includeServer(), new PerfectCompactingRecipeGen(packOutput, lookupProvider));
-        generator.addProvider(event.includeServer(), new PerfectMixingRecipeGen(packOutput, lookupProvider));
-        generator.addProvider(event.includeServer(), new PerfectItemApplicationRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectCrushingRecipeGen(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new PerfectDeployingRecipeGen(packOutput, lookupProvider));
-        generator.addProvider(event.includeServer(), new PerfectStandardRecipeGen(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new PerfectFillingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectHauntingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectItemApplicationRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectMillingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectMixingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectPolishingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectSequencedAssemblyRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new PerfectStandardRecipeGen(packOutput, lookupProvider));
 
         if (event.includeServer()) {
             PerfectProcessingRecipeGen.registerAllProcessing(generator, packOutput, lookupProvider);
