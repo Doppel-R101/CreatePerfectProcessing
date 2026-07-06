@@ -1,6 +1,7 @@
 package dev.kalwantspizza.perfectprocessing.datagen.recipes;
 
 import com.blackgear.vanillabackport.common.registries.ModBlocks;
+import com.blackgear.vanillabackport.common.registries.ModItems;
 import com.blackgear.vanillabackport.core.VanillaBackport;
 import net.minecraft.advancements.critereon.PlayerTrigger;
 import net.minecraft.core.HolderLookup;
@@ -10,6 +11,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.world.item.Items;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
 import org.jetbrains.annotations.NotNull;
 import org.violetmoon.quark.base.Quark;
@@ -52,6 +54,15 @@ public class PerfectStandardRecipeGen extends RecipeProvider {
                 .define('#', ModBlocks.STRIPPED_PALE_OAK_LOG.get())
                 .unlockedBy("test", PlayerTrigger.TriggerInstance.tick())
                 .save(recipeOutput.withConditions(zCond("variant_chests"), zCond("wood_to_chest_recipes"), new ModLoadedCondition(Quark.MOD_ID), new ModLoadedCondition(VanillaBackport.MOD_ID)), "perfectprocessing:shaped_crafting/compat/quark_vanilla_backport/chest_from_stripped_pale_oak_logs");
+        ShapedRecipeBuilder.shaped(RecipeCategory.TRANSPORTATION, ModItems.PALE_OAK_CHEST_BOAT.get())
+                .pattern("   ")
+                .pattern("#X#")
+                .pattern("###")
+                .define('#', ModBlocks.PALE_OAK_PLANKS.get())
+                .define('X', Tags.Items.CHESTS_WOODEN)
+                .unlockedBy("test", PlayerTrigger.TriggerInstance.tick())
+                .group("direct_chest_boat")
+                .save(recipeOutput.withConditions(zCond("direct_chest_boat"), new ModLoadedCondition(Quark.MOD_ID), new ModLoadedCondition(VanillaBackport.MOD_ID)), "perfectprocessing:shaped_crafting/compat/quark_vanilla_backport/pale_oak_chest_boat_direct");
 
 
     }
