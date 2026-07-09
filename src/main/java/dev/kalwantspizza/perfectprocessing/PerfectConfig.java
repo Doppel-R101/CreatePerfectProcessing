@@ -18,10 +18,10 @@ public class PerfectConfig {
             .comment("Whether tool recycling is active")
             .define("recycleTools", true);
     private static final ModConfigSpec.BooleanValue RECYCLE_COPYCATS = BUILDER
-            .comment("Whether tool recycling is active")
+            .comment("Whether copycat recycling is active")
             .define("recycleCopycats", true);
     private static final ModConfigSpec.BooleanValue RECYCLE_BACKPACKS = BUILDER
-            .comment("Whether tool recycling is active")
+            .comment("Whether backpack recycling is active")
             .define("recycleBackpacks", true);
 
     /* Todo: config setup
@@ -44,7 +44,7 @@ public class PerfectConfig {
     static void onLoad(final ModConfigEvent event) {
         recycleArmor = RECYCLE_ARMOR.get();
         recycleTools = RECYCLE_TOOLS.get();
-        recycleArmor = RECYCLE_COPYCATS.get();
-        recycleTools = RECYCLE_BACKPACKS.get();
+        recycleCopycats = RECYCLE_COPYCATS.get();
+        recycleBackpacks = RECYCLE_BACKPACKS.get();
     }
 }

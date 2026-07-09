@@ -27,7 +27,7 @@ public class PerfectProcessing {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        // Re-adds chromatic compund and relatives to the base Create tab
+        // Re-adds chromatic compound and relatives to the base Create tab
         if (event.getTabKey() == AllCreativeModeTabs.BASE_CREATIVE_TAB.getKey()) {
             event.insertAfter(AllItems.BRASS_INGOT.asStack(), AllItems.CHROMATIC_COMPOUND.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.insertAfter(AllItems.CHROMATIC_COMPOUND.asStack(), AllItems.SHADOW_STEEL.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
