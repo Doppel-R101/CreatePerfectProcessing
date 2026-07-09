@@ -10,19 +10,23 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 public class PerfectConfig {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
-    private static final ModConfigSpec.BooleanValue RECYCLE_ARMOR = BUILDER
-            .comment("Whether armor recycling is active")
-            .translation("PerfectProcessing.config.armor_recycling")
-            .define("recycleArmor", true);
+    private static final ModConfigSpec.BooleanValue RECYCLE_GENERAL = BUILDER
+            .comment("Whether overall recycling is active")
+            .define("recycle Overall", true);
+
+
+    private static final ModConfigSpec.BooleanValue RECYCLE_ARMOUR = BUILDER
+            .comment("Whether armour recycling is active")
+            .define("recycle.Armour", true);
     private static final ModConfigSpec.BooleanValue RECYCLE_TOOLS = BUILDER
             .comment("Whether tool recycling is active")
-            .define("recycleTools", true);
+            .define("recycle.Tools", true);
     private static final ModConfigSpec.BooleanValue RECYCLE_COPYCATS = BUILDER
             .comment("Whether copycat recycling is active")
-            .define("recycleCopycats", true);
+            .define("recycle.Copycats", true);
     private static final ModConfigSpec.BooleanValue RECYCLE_BACKPACKS = BUILDER
             .comment("Whether backpack recycling is active")
-            .define("recycleBackpacks", true);
+            .define("recycle.Backpacks", true);
 
     /* Todo: config setup
     *  - configs for all relevant things
@@ -35,14 +39,16 @@ public class PerfectConfig {
 
     static final ModConfigSpec SPEC = BUILDER.build();
 
-    public static boolean recycleArmor;
+    public static boolean recycleGeneral;
+    public static boolean recycleArmour;
     public static boolean recycleTools;
     public static boolean recycleCopycats;
     public static boolean recycleBackpacks;
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event) {
-        recycleArmor = RECYCLE_ARMOR.get();
+        recycleGeneral = RECYCLE_GENERAL.get();
+        recycleArmour = RECYCLE_ARMOUR.get();
         recycleTools = RECYCLE_TOOLS.get();
         recycleCopycats = RECYCLE_COPYCATS.get();
         recycleBackpacks = RECYCLE_BACKPACKS.get();
