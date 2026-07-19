@@ -3,13 +3,14 @@ package dev.kalwantspizza.perfectprocessing;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllCreativeModeTabs;
 import com.simibubi.create.AllItems;
+import dev.kalwantspizza.perfectprocessing.config.PerfectConfig;
 import dev.kalwantspizza.perfectprocessing.datagen.PerfectDataGenerators;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModLoadingContext;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 
 @Mod(PerfectProcessing.MODID)
@@ -22,7 +23,8 @@ public class PerfectProcessing {
 
         modEventBus.addListener(this::addCreative);
 
-        modContainer.registerConfig(ModConfig.Type.COMMON, PerfectConfig.SPEC);
+        ModLoadingContext modLoadingContext = ModLoadingContext.get();
+        PerfectConfig.register(modLoadingContext, modContainer);
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
