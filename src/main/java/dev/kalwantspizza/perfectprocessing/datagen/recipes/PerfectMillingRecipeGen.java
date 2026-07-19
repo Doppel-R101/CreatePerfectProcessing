@@ -1,5 +1,6 @@
 package dev.kalwantspizza.perfectprocessing.datagen.recipes;
 
+import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.MillingRecipeGen;
 import dev.kalwantspizza.perfectprocessing.PerfectProcessing;
 import net.minecraft.core.HolderLookup;
@@ -20,5 +21,11 @@ public class PerfectMillingRecipeGen extends MillingRecipeGen {
             .require(Items.DEEPSLATE)
             .duration(250)
             .output(Items.COBBLED_DEEPSLATE)
+    ),
+
+            CINDER_FLOUR_FROM_MILLING = create("content/cinder_flour_from_milling", b -> b
+            .require(Items.NETHERRACK)
+            .duration(250)
+            .output(AllItems.CINDER_FLOUR)
     );
 }
