@@ -3,7 +3,7 @@ package dev.kalwantspizza.perfectprocessing.config;
 import net.createmod.catnip.config.ConfigBase;
 
 public class PCasings extends ConfigBase {
-    public final ConfigBool LegacyCasings = b(true, "legacyCasings", Comments.legacyCasings, Comments.empty, Comments.defaultTrue);
+    public final ConfigBool LegacyCasings = b(true, "legacyCasings", Comments.legacyCasings, Comments.defaultTrue);
 
     @Override
     public String getName() {
@@ -13,7 +13,6 @@ public class PCasings extends ConfigBase {
     private static class Comments {
         static String legacyCasings = "Whether the refined radiance, shadow steel, chromatic compound and their casings can be made";
 
-        static String empty = "\u200E ";
         static String defaultTrue = "§2Default: True";
     }
 }
