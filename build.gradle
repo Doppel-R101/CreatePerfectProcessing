@@ -194,6 +194,8 @@ dependencies {
     implementation("maven.modrinth:3ADr1McV:XyrWUlJ7")
     // Dragons Plus 1.11.2b
     implementation("maven.modrinth:dzb1a5WV:lSnZyFnZ")
+    // Dye Depot 2.1.0 so that colorful catalysts shuts up
+    implementation("maven.modrinth:dye-depot:2.1.0")
     //
     //implementation("MAVEN")
 

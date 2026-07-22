@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-04T23:00:12.9987202	Tags for minecraft:item mod id perfectprocessing
+// 1.21.1	2026-07-22T02:48:23.2759712	Tags for minecraft:item mod id perfectprocessing
 bab798cfb54a319a5a9ce84f8527ee5b25127067 data/perfectprocessing/tags/item/armor/modded/andesite_exoskeleton.json
 aa1eac2d76ea64509f6d787817e8d60185f15f00 data/perfectprocessing/tags/item/armor/modded/andesite_jetpack.json
 330dd9a5b73e5f826cd94af4e9fa8b99e0a3102d data/perfectprocessing/tags/item/armor/modded/brass_exoskeleton.json
@@ -44,6 +44,7 @@ fd7b0fc9723985147699b419c2fd6071f95495cd data/perfectprocessing/tags/item/copyca
 775fd3d0b827ab8effcb110e6a695047139b24d6 data/perfectprocessing/tags/item/copycats/scrap_pipe.json
 1fdbea418d916304aacd760825d3d3277e0efcfb data/perfectprocessing/tags/item/copycats/scrap_small.json
 db8d7d792bd21464dee77b7be7c02b5ab5bed23d data/perfectprocessing/tags/item/copycats/scrap_tiny.json
+068017935b61b94848d07219d98506a0c8c017ed data/perfectprocessing/tags/item/copycats_all.json
 5dfcec46ca15e186d0eabfaf22a4b14fa3f4e2c1 data/perfectprocessing/tags/item/sophisticated/advanced_upgrades.json
 4b0c2a390df7190e7382cf3b9fc696c3d589fa2f data/perfectprocessing/tags/item/sophisticated/backpacks.json
 fd0a671e294a181d266b7d15488511b029907b97 data/perfectprocessing/tags/item/sophisticated/backpacks_value.json

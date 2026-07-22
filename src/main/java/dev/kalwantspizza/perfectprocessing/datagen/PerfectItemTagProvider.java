@@ -87,6 +87,17 @@ public class PerfectItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.COPYCAT_SCRAP_PIPE).add(
                 CCBlocks.COPYCAT_FLUID_PIPE.asItem()
         );
+        tag(ItemTags.COPYCAT_ALL).addTags(
+                ItemTags.COPYCAT_SCRAP_COGWHEELS,
+                ItemTags.COPYCAT_SCRAP_IRON_DOOR,
+                ItemTags.COPYCAT_SCRAP_LARGE,
+                ItemTags.COPYCAT_SCRAP_MEDIUM,
+                ItemTags.COPYCAT_SCRAP_MINI,
+                ItemTags.COPYCAT_SCRAP_NORMAL,
+                ItemTags.COPYCAT_SCRAP_PIPE,
+                ItemTags.COPYCAT_SCRAP_SMALL,
+                ItemTags.COPYCAT_SCRAP_TINY
+        );
 
         tag(ItemTags.SOPHISTICATED_NORMAL_UPGRADES).add(
                 ModItems.PICKUP_UPGRADE.getKey(),
