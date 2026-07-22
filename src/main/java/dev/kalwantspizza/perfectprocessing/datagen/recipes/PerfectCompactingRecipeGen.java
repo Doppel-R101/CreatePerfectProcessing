@@ -47,11 +47,14 @@ public class PerfectCompactingRecipeGen extends CompactingRecipeGen {
             OCHRUM_FROM_PRESSING = create("content/ochrum_from_pressing", b -> b
                 .require(Tags.Items.GRAVELS)
                 .require(Tags.Items.GRAVELS)
+                .require(Tags.Items.GRAVELS)
+                .require(Tags.Items.GRAVELS)
                 .require(Tags.Items.NUGGETS_GOLD)
                 .require(Tags.Items.NUGGETS_GOLD)
                 .require(Tags.Items.NUGGETS_GOLD)
-                .require(FluidTags.LAVA, 100)
-                .output(AllPaletteStoneTypes.OCHRUM.baseBlock.get(), 2)
+                .require(Tags.Items.NUGGETS_GOLD)
+                .require(FluidTags.LAVA, 200)
+                .output(AllPaletteStoneTypes.OCHRUM.baseBlock.get(), 4)
 
     ),
             VERIDIUM_FROM_PRESSING = create("content/veridium_from_pressing", b -> b

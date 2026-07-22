@@ -1,0 +1,110 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:storage_blocks/diamond"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "chance": 160.0,
+      "id": "minecraft:ancient_debris"
+    },
+    {
+      "chance": 10.0,
+      "id": "minecraft:obsidian"
+    },
+    {
+      "chance": 2.0,
+      "id": "minecraft:soul_soil"
+    },
+    {
+      "chance": 5.0,
+      "id": "minecraft:soul_sand"
+    },
+    {
+      "chance": 40.0,
+      "id": "minecraft:diamond_block"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:unprocessed_obsidian_sheet"
+        },
+        {
+          "tag": "c:storage_blocks/coal"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:unprocessed_obsidian_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:unprocessed_obsidian_sheet"
+        },
+        {
+          "item": "minecraft:soul_sand"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:unprocessed_obsidian_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create:unprocessed_obsidian_sheet"
+        },
+        {
+          "type": "neoforge:tag",
+          "amount": 250,
+          "tag": "c:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:unprocessed_obsidian_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create:unprocessed_obsidian_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:unprocessed_obsidian_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create:unprocessed_obsidian_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:unprocessed_obsidian_sheet"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create:unprocessed_obsidian_sheet"
+  }
+}

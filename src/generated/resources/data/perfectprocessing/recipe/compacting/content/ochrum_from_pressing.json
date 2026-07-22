@@ -8,6 +8,15 @@
       "tag": "c:gravels"
     },
     {
+      "tag": "c:gravels"
+    },
+    {
+      "tag": "c:gravels"
+    },
+    {
+      "tag": "c:nuggets/gold"
+    },
+    {
       "tag": "c:nuggets/gold"
     },
     {
@@ -18,13 +27,13 @@
     },
     {
       "type": "neoforge:tag",
-      "amount": 100,
+      "amount": 200,
       "tag": "minecraft:lava"
     }
   ],
   "results": [
     {
-      "count": 2,
+      "count": 4,
       "id": "create:ochrum"
     }
   ]
