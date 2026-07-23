@@ -3,7 +3,7 @@ package dev.kalwantspizza.perfectprocessing.config;
 import net.createmod.catnip.config.ConfigBase;
 
 public class PCasings extends ConfigBase {
-    public final ConfigBool LegacyCasings = b(true, "legacyCasings", Comments.legacyCasings, Comments.defaultTrue);
+    public final ConfigBool legacyCasings = b(true, "legacyCasings", Comments.legacyCasings, Comments.defaultTrue);
 
     @Override
     public String getName() {

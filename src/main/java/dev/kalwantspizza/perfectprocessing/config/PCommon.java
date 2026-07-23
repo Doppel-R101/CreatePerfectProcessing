@@ -28,7 +28,7 @@ public class PCommon extends ConfigBase {
         booleanFlags.put("fillDecorative", blocks.fillDecorative);
         booleanFlags.put("mixingProduce", blocks.mixingProduce);
         booleanFlags.put("spongeDupe", blocks.spongeDupe);
-        booleanFlags.put("legacyCasings", casings.LegacyCasings);
+        booleanFlags.put("legacyCasings", casings.legacyCasings);
         booleanFlags.put("enderEyePolishing", items.enderEyePolishing);
         booleanFlags.put("magmaCreamHaunting", items.magmaCreamHaunting);
         booleanFlags.put("phantomMembraneHaunting", items.phantomMembraneHaunting);
