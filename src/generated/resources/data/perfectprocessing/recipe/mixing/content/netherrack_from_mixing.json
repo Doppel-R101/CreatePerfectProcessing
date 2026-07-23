@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "perfectprocessing:recipe_enabled",
+      "flag": "mixingProduce"
+    }
+  ],
   "type": "create:mixing",
   "heat_requirement": "heated",
   "ingredients": [

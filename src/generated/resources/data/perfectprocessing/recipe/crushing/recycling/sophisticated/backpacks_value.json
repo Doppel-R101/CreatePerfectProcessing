@@ -3,6 +3,10 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "sophisticatedbackpacks"
+    },
+    {
+      "type": "perfectprocessing:recipe_enabled",
+      "flag": "sophisticatedBackpacks"
     }
   ],
   "type": "create:crushing",

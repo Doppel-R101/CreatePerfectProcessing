@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "perfectprocessing:recipe_enabled",
+      "flag": "lapisHaunting"
+    }
+  ],
   "type": "create:haunting",
   "ingredients": [
     {
@@ -6,6 +12,10 @@
     }
   ],
   "results": [
+    {
+      "count": 5,
+      "id": "minecraft:lapis_lazuli"
+    },
     {
       "chance": 0.5,
       "count": 4,

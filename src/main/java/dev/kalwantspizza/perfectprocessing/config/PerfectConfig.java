@@ -10,6 +10,7 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.EnumMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.function.Supplier;
@@ -18,10 +19,10 @@ public class PerfectConfig {
 
     private static final Map<ModConfig.Type, ConfigBase> CONFIGS = new EnumMap<>(ModConfig.Type.class);
 
-    private static PServer server;
+    private static PCommon common;
 
-    public static PServer server() {
-        return server;
+    public static PCommon common() {
+        return common;
     }
 
     private static <T extends ConfigBase> T register(Supplier<T> factory, ModConfig.Type side) {
@@ -38,7 +39,7 @@ public class PerfectConfig {
     }
 
     public static void register(ModLoadingContext context, ModContainer container) {
-        server = register(PServer::new, ModConfig.Type.SERVER);
+        common = register(PCommon::new, ModConfig.Type.COMMON);
 
         for (Entry<ModConfig.Type, ConfigBase> pair : CONFIGS.entrySet())
             container.registerConfig(pair.getKey(), pair.getValue().specification);

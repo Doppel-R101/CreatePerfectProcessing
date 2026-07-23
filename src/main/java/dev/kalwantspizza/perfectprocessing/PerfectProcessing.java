@@ -22,7 +22,7 @@ public class PerfectProcessing {
         modEventBus.addListener(PerfectDataGenerators::gatherData);
 
         modEventBus.addListener(this::addCreative);
-
+        PerfectConditions.register(modEventBus);
         ModLoadingContext modLoadingContext = ModLoadingContext.get();
         PerfectConfig.register(modLoadingContext, modContainer);
     }

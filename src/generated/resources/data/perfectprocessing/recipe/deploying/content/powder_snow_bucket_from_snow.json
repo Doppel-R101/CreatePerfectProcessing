@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "perfectprocessing:recipe_enabled",
+      "flag": "powderedSnowBucketDeploying"
+    }
+  ],
   "type": "create:deploying",
   "ingredients": [
     {

@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "perfectprocessing:recipe_enabled",
+      "flag": "fillDecorative"
+    }
+  ],
   "type": "create:filling",
   "ingredients": [
     {

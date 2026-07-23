@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "perfectprocessing:recipe_enabled",
+      "flag": "armour"
+    }
+  ],
   "type": "create:crushing",
   "ingredients": [
     {

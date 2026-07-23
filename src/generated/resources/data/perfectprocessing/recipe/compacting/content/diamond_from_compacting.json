@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "perfectprocessing:recipe_type_setting",
+      "flag": "diamondRecipe",
+      "recipeTypeSetting": "LEGACY"
+    }
+  ],
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:coal_block"
+    },
+    {
+      "item": "minecraft:coal_block"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "minecraft:lava"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:diamond"
+    }
+  ]
+}

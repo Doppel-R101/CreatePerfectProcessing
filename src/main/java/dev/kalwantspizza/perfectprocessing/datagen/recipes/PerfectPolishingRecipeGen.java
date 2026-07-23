@@ -2,6 +2,7 @@ package dev.kalwantspizza.perfectprocessing.datagen.recipes;
 
 import com.simibubi.create.api.data.recipe.PolishingRecipeGen;
 import dev.kalwantspizza.perfectprocessing.PerfectProcessing;
+import dev.kalwantspizza.perfectprocessing.config.RecipeEnabledCondition;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
@@ -19,5 +20,6 @@ public class PerfectPolishingRecipeGen extends PolishingRecipeGen {
     ENDER_EYE_FROM_CRYING_OBSIDIAN = create("content/ender_eye_from_crying_obsidian", b -> b
             .require(Items.CRYING_OBSIDIAN)
             .output(Items.ENDER_EYE)
+            .withCondition(new RecipeEnabledCondition("enderEyePolishing"))
     );
 }

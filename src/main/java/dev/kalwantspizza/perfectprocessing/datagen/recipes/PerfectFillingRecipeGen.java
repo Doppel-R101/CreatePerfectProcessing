@@ -2,6 +2,7 @@ package dev.kalwantspizza.perfectprocessing.datagen.recipes;
 
 import com.simibubi.create.api.data.recipe.FillingRecipeGen;
 import dev.kalwantspizza.perfectprocessing.PerfectProcessing;
+import dev.kalwantspizza.perfectprocessing.config.RecipeEnabledCondition;
 import net.mehvahdjukaar.supplementaries.Supplementaries;
 import net.mehvahdjukaar.supplementaries.reg.ModRegistry;
 import net.minecraft.core.HolderLookup;
@@ -22,7 +23,7 @@ public class PerfectFillingRecipeGen extends FillingRecipeGen {
             CALCITE_FROM_FILLING_DIORITE = create("content/calcite_from_filling_diorite", b -> b
                     .require(Tags.Fluids.WATER, 100)
                     .require(Items.DIORITE)
-                    .output(Items.CALCITE)
+                    .output(Items.CALCITE).withCondition(new RecipeEnabledCondition("fillDecorative"))
     ),
 
             DEEPSLATE_FROM_FILLING_FLINT_BLOCK = create("content/deepslate_from_filling_flint_block", b -> b
@@ -30,13 +31,14 @@ public class PerfectFillingRecipeGen extends FillingRecipeGen {
                     .require(ModRegistry.FLINT_BLOCK.get())
                     .output(Items.DEEPSLATE)
                     .whenModLoaded(Supplementaries.MOD_ID)
+                    .withCondition(new RecipeEnabledCondition("fillDecorative"))
 
     ),
 
             DRIPSTONE_FROM_FILLING_GRANITE = create("content/dripstone_from_filling_granite", b -> b
                     .require(Tags.Fluids.WATER, 100)
                     .require(Items.GRANITE)
-                    .output(Items.DRIPSTONE_BLOCK)
+                    .output(Items.DRIPSTONE_BLOCK).withCondition(new RecipeEnabledCondition("fillDecorative"))
 
     );
 }

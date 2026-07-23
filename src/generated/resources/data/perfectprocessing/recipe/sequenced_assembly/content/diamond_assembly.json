@@ -1,4 +1,11 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "perfectprocessing:recipe_type_setting",
+      "flag": "diamondRecipe",
+      "recipeTypeSetting": "ASSEMBLY"
+    }
+  ],
   "type": "create:sequenced_assembly",
   "ingredient": {
     "tag": "c:obsidians/normal"

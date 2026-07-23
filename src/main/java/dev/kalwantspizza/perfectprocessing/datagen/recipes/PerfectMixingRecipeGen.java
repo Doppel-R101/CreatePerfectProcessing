@@ -5,6 +5,7 @@ import com.simibubi.create.AllTags;
 import com.simibubi.create.api.data.recipe.MixingRecipeGen;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
 import dev.kalwantspizza.perfectprocessing.PerfectProcessing;
+import dev.kalwantspizza.perfectprocessing.config.RecipeEnabledCondition;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
@@ -27,6 +28,7 @@ public class PerfectMixingRecipeGen extends MixingRecipeGen {
                 .require(Items.DIORITE)
                 .require(Tags.Fluids.LAVA, 100)
 		        .output(Items.TUFF, 2)
+                .withCondition(new RecipeEnabledCondition("mixingProduce"))
     ),
 
             NETHERRACK_FROM_MIXING = create("content/netherrack_from_mixing", b -> b
@@ -35,12 +37,14 @@ public class PerfectMixingRecipeGen extends MixingRecipeGen {
                 .require(Items.NETHER_WART)
 		        .output(Items.NETHERRACK, 2)
                 .requiresHeat(HeatCondition.HEATED)
+                .withCondition(new RecipeEnabledCondition("mixingProduce"))
     ),
 
             DIORITE_AS_MIXING = create("content/diorite_as_mixing", b -> b
                 .require(Items.ANDESITE)
                 .require(Items.COBBLESTONE)
 		        .output(Items.DIORITE)
+                .withCondition(new RecipeEnabledCondition("mixingProduce"))
     ),
 
             CHROMATIC_COMPOUND_FROM_MIXING = create("content/chromatic_compound_from_mixing", b -> b
@@ -53,5 +57,6 @@ public class PerfectMixingRecipeGen extends MixingRecipeGen {
                 .require(AllItems.POLISHED_ROSE_QUARTZ)
 		        .output(AllItems.CHROMATIC_COMPOUND)
                 .requiresHeat(HeatCondition.HEATED)
+                .withCondition(new RecipeEnabledCondition("legacyCasings"))
     );
 }

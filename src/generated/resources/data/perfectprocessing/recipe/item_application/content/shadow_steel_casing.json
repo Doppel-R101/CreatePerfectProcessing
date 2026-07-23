@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "perfectprocessing:recipe_enabled",
+      "flag": "legacyCasings"
+    }
+  ],
   "type": "create:item_application",
   "ingredients": [
     {

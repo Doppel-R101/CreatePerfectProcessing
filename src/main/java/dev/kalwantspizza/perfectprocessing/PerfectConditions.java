@@ -1,22 +1,28 @@
 package dev.kalwantspizza.perfectprocessing;
 
 import com.mojang.serialization.MapCodec;
+import dev.kalwantspizza.perfectprocessing.config.RecipeEnabledCondition;
+import dev.kalwantspizza.perfectprocessing.config.RecipeModeCondition;
+import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.conditions.ICondition;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
-import java.util.Optional;
+import java.util.function.Supplier;
 
-// Perfect? I HATE THIS; WHY DOES THIS NEED TO EXIST?
-public record PerfectConditions(String flag, Optional<Boolean> extraCondition) implements ICondition {
+import static dev.kalwantspizza.perfectprocessing.PerfectProcessing.MODID;
 
+public  class PerfectConditions {
+    public static final DeferredRegister<MapCodec<? extends ICondition>> CONDITION_CODECS =
+            DeferredRegister.create(NeoForgeRegistries.Keys.CONDITION_CODECS, MODID);
 
+    public static final Supplier<MapCodec<RecipeEnabledCondition>> RECIPE_ENABLED =
+            CONDITION_CODECS.register("recipe_enabled",() -> RecipeEnabledCondition.CODEC);
+    public static final Supplier<MapCodec<RecipeModeCondition>> RECIPE_TYPE_SETTING =
+            CONDITION_CODECS.register("recipe_type_setting", () -> RecipeModeCondition.CODEC);
 
-    @Override
-    public boolean test(IContext iContext) {
-        return false;
+    public static void register(IEventBus modEventBus) {
+        CONDITION_CODECS.register(modEventBus);
     }
 
-    @Override
-    public MapCodec<? extends ICondition> codec() {
-        return null;
-    }
 }

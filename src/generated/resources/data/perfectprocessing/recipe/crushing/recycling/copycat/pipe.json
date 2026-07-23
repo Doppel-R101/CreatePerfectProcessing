@@ -3,6 +3,10 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "copycats"
+    },
+    {
+      "type": "perfectprocessing:recipe_enabled",
+      "flag": "copycats"
     }
   ],
   "type": "create:crushing",
