@@ -23,7 +23,8 @@ public class PerfectFillingRecipeGen extends FillingRecipeGen {
             CALCITE_FROM_FILLING_DIORITE = create("content/calcite_from_filling_diorite", b -> b
                     .require(Tags.Fluids.WATER, 100)
                     .require(Items.DIORITE)
-                    .output(Items.CALCITE).withCondition(new RecipeEnabledCondition("fillDecorative"))
+                    .output(Items.CALCITE)
+                    .withCondition(new RecipeEnabledCondition("fillDecorative"))
     ),
 
             DEEPSLATE_FROM_FILLING_FLINT_BLOCK = create("content/deepslate_from_filling_flint_block", b -> b

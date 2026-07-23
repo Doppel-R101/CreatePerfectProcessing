@@ -26,7 +26,7 @@ public class PerfectHauntingRecipeGen extends HauntingRecipeGen {
             PHANTOM_MEMBRANE_FROM_FEATHERS = create("content/phantom_membrane_from_feathers", b -> b
                 .require(Tags.Items.FEATHERS)
                 .output(0.25f, Items.PHANTOM_MEMBRANE)
-            .withCondition(new RecipeEnabledCondition("phantomMembraneHaunting"))
+                .withCondition(new RecipeEnabledCondition("phantomMembraneHaunting"))
     ),
 
             PHANTOM_MEMBRANE_FROM_DRAGON_FLY_WING = create("content/compat/crit_n_comp/phantom_membrane_from_dragon_fly_wing", b -> b

@@ -491,7 +491,7 @@ public class PerfectItemTagProvider extends ItemTagsProvider {
                 Items.TUBE_CORAL_FAN
         );
         // Dead Corals
-        tag(ItemTags.ALL_CORAL_TYPES).add(
+        tag(ItemTags.ALL_DRIED_CORAL_TYPES).add(
                 Items.DEAD_BRAIN_CORAL,
                 Items.DEAD_BRAIN_CORAL_BLOCK,
                 Items.DEAD_BRAIN_CORAL_FAN,

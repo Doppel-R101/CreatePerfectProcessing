@@ -46,7 +46,7 @@ public class PerfectSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeGe
 
             NETHERITE_ASSEMBLY = createConditional("content/netherite_assembly", b -> b.require(Tags.Items.STORAGE_BLOCKS_DIAMOND)
             .transitionTo(AllItems.INCOMPLETE_REINFORCED_SHEET.get())
-            .addOutput(Items.ANCIENT_DEBRIS, 120)
+            .addOutput(Items.ANCIENT_DEBRIS, 160)
             .addOutput(Items.OBSIDIAN, 10)
             .addOutput(Items.SOUL_SOIL, 2)
             .addOutput(Items.SOUL_SAND, 5)

@@ -12,7 +12,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "tag": "perfectprocessing:sophisticated/normal_upgrades"
+      "tag": "perfectprocessing:sophisticated/backpacks_normal_upgrades"
     }
   ],
   "processing_time": 300,

@@ -18,9 +18,10 @@ public class PerfectDeployingRecipeGen extends DeployingRecipeGen {
     GeneratedRecipe
 
             POWDER_SNOW_BUCKET_FROM_SNOW = create("content/powder_snow_bucket_from_snow", b -> b
-            .require(Items.SNOW_BLOCK)
-            .require(Items.BUCKET)
-            .output(Items.POWDER_SNOW_BUCKET).withCondition(new RecipeEnabledCondition("powderedSnowBucketDeploying"))
+                .require(Items.SNOW_BLOCK)
+                .require(Items.BUCKET)
+                .output(Items.POWDER_SNOW_BUCKET)
+                .withCondition(new RecipeEnabledCondition("powderedSnowBucketDeploying"))
 
     );
 }

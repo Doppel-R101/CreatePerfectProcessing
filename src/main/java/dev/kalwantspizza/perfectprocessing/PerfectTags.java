@@ -21,9 +21,9 @@ public class PerfectTags {
         public static final TagKey<Item> COPYCAT_SCRAP_IRON_DOOR = createTag("copycats/scrap_iron_door");
         public static final TagKey<Item> COPYCAT_ALL = createTag("copycats_all");
 
-        public static final TagKey<Item> SOPHISTICATED_NORMAL_UPGRADES = createTag("sophisticated/normal_upgrades");
-        public static final TagKey<Item> SOPHISTICATED_ADVANCED_UPGRADES = createTag("sophisticated/advanced_upgrades");
-        public static final TagKey<Item> SOPHISTICATED_SPECIAL_UPGRADES = createTag("sophisticated/special_upgrades");
+        public static final TagKey<Item> SOPHISTICATED_NORMAL_UPGRADES = createTag("sophisticated/backpacks_normal_upgrades");
+        public static final TagKey<Item> SOPHISTICATED_ADVANCED_UPGRADES = createTag("sophisticated/backpacks_advanced_upgrades");
+        public static final TagKey<Item> SOPHISTICATED_SPECIAL_UPGRADES = createTag("sophisticated/backpacks_special_upgrades");
         public static final TagKey<Item> SOPHISTICATED_BACKPACKS = createTag("sophisticated/backpacks");
         public static final TagKey<Item> SOPHISTICATED_BACKPACKS_VALUE = createTag("sophisticated/backpacks_value");
         

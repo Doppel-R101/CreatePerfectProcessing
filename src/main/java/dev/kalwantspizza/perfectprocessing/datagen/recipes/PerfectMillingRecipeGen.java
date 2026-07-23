@@ -19,15 +19,15 @@ public class PerfectMillingRecipeGen extends MillingRecipeGen {
     GeneratedRecipe
 
             COBBLED_DEEPSLATE_FROM_MILLING = create("content/cobbled_deepslate_from_milling", b -> b
-            .require(Items.DEEPSLATE)
-            .duration(250)
-            .output(Items.COBBLED_DEEPSLATE)
-            .withCondition(new RecipeEnabledCondition("crushingDeepslate"))
+                .require(Items.DEEPSLATE)
+                .duration(250)
+                .output(Items.COBBLED_DEEPSLATE)
+                .withCondition(new RecipeEnabledCondition("crushingDeepslate"))
     ),
 
             CINDER_FLOUR_FROM_MILLING = create("content/cinder_flour_from_milling", b -> b
-            .require(Items.NETHERRACK)
-            .duration(250)
-            .output(AllItems.CINDER_FLOUR)
+                .require(Items.NETHERRACK)
+                .duration(250)
+                .output(AllItems.CINDER_FLOUR)
     );
 }

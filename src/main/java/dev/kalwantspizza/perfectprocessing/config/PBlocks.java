@@ -7,7 +7,7 @@ public class PBlocks extends ConfigBase {
     public final ConfigBool compactResource = b(true, "compactResourceBlocks", Comments.compactResource, Comments.resourceList, Comments.defaultTrue);
     public final ConfigBool fillDecorative = b(true, "fillDecorativeBlocks", Comments.fillDecorative, Comments.decorativeList, Comments.defaultTrue);
     public final ConfigBool mixingProduce = b(true, "mixProductionalBlocks", Comments.mixingProduce, Comments.produceList, Comments.defaultTrue);
-    public final ConfigBool spongeDupe = b(true, "duplicateSponges", Comments.spongeDupe);
+    public final ConfigBool spongeDupe = b(true, "duplicateSponges", Comments.spongeDupe, Comments.defaultTrue);
 
     @Override
     public String getName() {
@@ -15,7 +15,7 @@ public class PBlocks extends ConfigBase {
     }
 
     private static class Comments {
-        static String fillDecorative = "Whether the filling recipes for decorative blocks are enabled";
+        static String fillDecorative = "Whether the recipes for decorative blocks are enabled";
         static String compactResource = "Whether the compacting recipes for resource blocks are enabled";
         static String mixingProduce = "Whether the mixing recipes for productional blocks are enabled";
         static String spongeDupe = "Whether corals can be compacted into additional sponges";

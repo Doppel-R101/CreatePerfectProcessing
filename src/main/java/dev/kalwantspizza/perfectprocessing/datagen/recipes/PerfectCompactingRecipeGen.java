@@ -25,10 +25,11 @@ public class PerfectCompactingRecipeGen extends CompactingRecipeGen {
     GeneratedRecipe
 
             DIAMOND_FROM_COMPACTING = create("content/diamond_from_compacting", b -> b
-                    .require(Items.COAL_BLOCK)
-                    .require(Items.COAL_BLOCK)
-                    .require(FluidTags.LAVA, 1000)
-                    .output(Items.DIAMOND, 1).withCondition(new RecipeModeCondition("diamondRecipe", PGems.RecipeTypeSetting.LEGACY))
+                .require(Items.COAL_BLOCK)
+                .require(Items.COAL_BLOCK)
+                .require(FluidTags.LAVA, 1000)
+                .output(Items.DIAMOND, 1)
+                .withCondition(new RecipeModeCondition("diamondRecipe", PGems.RecipeTypeSetting.LEGACY))
     ),
 
             ASURINE_FROM_PRESSING = create("content/asurine_from_pressing", b -> b
@@ -39,7 +40,8 @@ public class PerfectCompactingRecipeGen extends CompactingRecipeGen {
                 .require(CommonMetal.ZINC.nuggets)
                 .require(CommonMetal.ZINC.nuggets)
                 .require(FluidTags.LAVA, 100)
-                .output(AllPaletteStoneTypes.ASURINE.baseBlock.get(), 2).withCondition(new RecipeEnabledCondition("compactResource"))
+                .output(AllPaletteStoneTypes.ASURINE.baseBlock.get(), 2)
+                .withCondition(new RecipeEnabledCondition("compactResource"))
 
     ),
             CRIMSITE_FROM_PRESSING = create("content/crimsite_from_pressing", b -> b
@@ -51,7 +53,8 @@ public class PerfectCompactingRecipeGen extends CompactingRecipeGen {
                 .require(Tags.Items.NUGGETS_IRON)
                 .require(Tags.Items.NUGGETS_IRON)
                 .require(FluidTags.LAVA, 100)
-                .output(AllPaletteStoneTypes.CRIMSITE.baseBlock.get(), 2).withCondition(new RecipeEnabledCondition("compactResource"))
+                .output(AllPaletteStoneTypes.CRIMSITE.baseBlock.get(), 2)
+                .withCondition(new RecipeEnabledCondition("compactResource"))
 
 
             ),
@@ -65,7 +68,8 @@ public class PerfectCompactingRecipeGen extends CompactingRecipeGen {
                 .require(Tags.Items.NUGGETS_GOLD)
                 .require(Tags.Items.NUGGETS_GOLD)
                 .require(FluidTags.LAVA, 200)
-                .output(AllPaletteStoneTypes.OCHRUM.baseBlock.get(), 4).withCondition(new RecipeEnabledCondition("compactResource"))
+                .output(AllPaletteStoneTypes.OCHRUM.baseBlock.get(), 4)
+                .withCondition(new RecipeEnabledCondition("compactResource"))
 
 
             ),
@@ -79,7 +83,8 @@ public class PerfectCompactingRecipeGen extends CompactingRecipeGen {
                 .require(CommonMetal.COPPER.nuggets)
                 .require(CommonMetal.COPPER.nuggets)
                 .require(FluidTags.LAVA, 100)
-                .output(AllPaletteStoneTypes.VERIDIUM.baseBlock.get(), 2).withCondition(new RecipeEnabledCondition("compactResource"))
+                .output(AllPaletteStoneTypes.VERIDIUM.baseBlock.get(), 2)
+                .withCondition(new RecipeEnabledCondition("compactResource"))
 
 
             ),
@@ -90,7 +95,8 @@ public class PerfectCompactingRecipeGen extends CompactingRecipeGen {
                 .require(PerfectTags.ItemTags.ALL_CORAL_TYPES)
                 .require(PerfectTags.ItemTags.ALL_CORAL_TYPES)
                 .output(Items.SPONGE, 2)
-                .output(0.25f, Items.SPONGE).withCondition(new RecipeEnabledCondition("spongeDupe"))
+                .output(0.25f, Items.SPONGE)
+                .withCondition(new RecipeEnabledCondition("spongeDupe"))
 
     ),
             SPONGE_DUPLICATION_FROM_DEAD_CORALS = create("content/sponge_duplication_from_dead_corals", b -> b
@@ -103,7 +109,8 @@ public class PerfectCompactingRecipeGen extends CompactingRecipeGen {
                 .require(Items.BONE_MEAL)
                 .require(FluidTags.WATER, 250)
                 .output(Items.SPONGE, 2)
-                .output(0.25f, Items.SPONGE).withCondition(new RecipeEnabledCondition("spongeDupe"))
+                .output(0.25f, Items.SPONGE)
+                .withCondition(new RecipeEnabledCondition("spongeDupe"))
 
     ),
             COAL_FROM_CHARCOAL_COMPACTING = create("content/coal_from_charcoal_compacting", b -> b
@@ -124,5 +131,6 @@ public class PerfectCompactingRecipeGen extends CompactingRecipeGen {
                 .output(Items.BASALT, 2)
                 .output(Items.BLUE_ICE)
                 .output(Items.SOUL_SOIL)
+                .withCondition(new RecipeEnabledCondition("fillDecorative"))
     );
 }
