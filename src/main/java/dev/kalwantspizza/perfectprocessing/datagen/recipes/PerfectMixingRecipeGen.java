@@ -41,7 +41,7 @@ public class PerfectMixingRecipeGen extends MixingRecipeGen {
     ),
 
             DIORITE_AS_MIXING = create("content/diorite_as_mixing", b -> b
-                .require(Items.ANDESITE)
+                .require(Items.QUARTZ)
                 .require(Items.COBBLESTONE)
 		        .output(Items.DIORITE)
                 .withCondition(new RecipeEnabledCondition("mixingProduce"))

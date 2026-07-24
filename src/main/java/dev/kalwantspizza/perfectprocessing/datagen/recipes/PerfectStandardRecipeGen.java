@@ -55,7 +55,6 @@ public class PerfectStandardRecipeGen extends RecipeProvider {
                 .unlockedBy("test", PlayerTrigger.TriggerInstance.tick())
                 .save(recipeOutput.withConditions(zCond("variant_chests"), zCond("wood_to_chest_recipes"), new ModLoadedCondition(Quark.MOD_ID), new ModLoadedCondition(VanillaBackport.MOD_ID)), "perfectprocessing:shaped_crafting/compat/quark_vanilla_backport/chest_from_stripped_pale_oak_logs");
         ShapedRecipeBuilder.shaped(RecipeCategory.TRANSPORTATION, ModItems.PALE_OAK_CHEST_BOAT.get())
-                .pattern("   ")
                 .pattern("#X#")
                 .pattern("###")
                 .define('#', ModBlocks.PALE_OAK_PLANKS.get())
